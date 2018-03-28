@@ -36,7 +36,6 @@ public class GameRunMVC {
 
 		
 		
-
 		//tell View about Controller 
 		// a method addController(ActionListener controller), which attaches the controller as a listener to the button (called by the glue class RunMVC). 
 		myView.addController(myController);

@@ -9,7 +9,6 @@ import java.lang.Integer;
 import java.util.Observable;
 import java.awt.event.ActionListener;	
 
-
 class View implements java.util.Observer {
 
 	private TextField myTextField;

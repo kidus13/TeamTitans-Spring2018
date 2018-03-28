@@ -1,6 +1,5 @@
 import java.util.*;
 
-
 public  class GameModel extends java.util.Observable {
 
 
