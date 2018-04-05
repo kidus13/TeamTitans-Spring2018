@@ -22,7 +22,8 @@ import java.io.*;
 public class GUI extends JFrame implements java.util.Observer {
 
 	private JPanel contentPane;
-	private JTextField textField;
+	private JTextField textField1;
+	private JTextField textField2;
 	 
 
 
@@ -68,14 +69,14 @@ public class GUI extends JFrame implements java.util.Observer {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		textField = new JTextField();
-		textField.setHorizontalAlignment(SwingConstants.LEFT);
-		textField.setForeground(Color.RED);
-		textField.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
-		textField.setBackground(Color.LIGHT_GRAY);
-		textField.setBounds(407, 13, 452, 274);
-		contentPane.add(textField);
-		textField.setColumns(10);
+		textField1 = new JTextField();
+		textField1.setHorizontalAlignment(SwingConstants.LEFT);
+		textField1.setForeground(Color.RED);
+		textField1.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
+		textField1.setBackground(Color.LIGHT_GRAY);
+		textField1.setBounds(407, 13, 452, 150);
+		contentPane.add(textField1);
+		textField1.setColumns(10);
 		//Thehandler handler = new Thehandler();
 		//textField.addActionListener(handler);
 		
@@ -191,11 +192,11 @@ public class GUI extends JFrame implements java.util.Observer {
 			public void actionPerformed(ActionEvent e){
 				File file = new File("game.txt");
 				Player player = new Player();
-				String getValue = textField.getText();				
+				String getValue = textField1.getText();				
 				
 				try {
 					PrintWriter output = new PrintWriter(file);
-					output.println(textField.getText());
+					output.println(textField1.getText());
 					output.close();
 
 				} catch (IOException e1) {
@@ -205,7 +206,7 @@ public class GUI extends JFrame implements java.util.Observer {
 				try {
 					input = new Scanner(file);
 					player.setName(input.nextLine());
-					textField.setText("Hello " + player.getName());
+					textField1.setText("Hello " + player.getName());
 				} catch (FileNotFoundException e1) {
 					System.out.println("that shit dont exist nigga");
 				}
@@ -238,13 +239,28 @@ public class GUI extends JFrame implements java.util.Observer {
 		JLabel lblInventory = new JLabel("Inventory");
 		lblInventory.setBounds(624, 378, 56, 16);
 		contentPane.add(lblInventory);
+		
+		textField2 = new JTextField();
+		textField2.setAutoscrolls(false);
+		textField2.setHorizontalAlignment(SwingConstants.LEFT);
+	//	textField2.setHorizontalAlignment(SwingConstants.TOP);
+		textField2.setForeground(Color.RED);
+		textField2.setFont(new Font("Yu Gothic UI Semibold", Font.BOLD, 18));
+		textField2.setColumns(10);
+		textField2.setBackground(Color.LIGHT_GRAY);
+		textField2.setBounds(407, 176, 452, 150);
+		contentPane.add(textField2);
+		
+		JButton btnContinue = new JButton("Continue");
+		btnContinue.setBounds(729, 339, 97, 25);
+		contentPane.add(btnContinue);
 	}
 
 	@Override
 
 	public void update(Observable obs, Object obj) {
 	
-		textField.setText(""+obj);	
+		textField1.setText(""+obj);	
     	}
 	/*private class Thehandler implements ActionListener{
 		GameModel model = new GameModel();
