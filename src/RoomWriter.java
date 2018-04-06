@@ -8,24 +8,24 @@ import java.util.Scanner;
  *
  */
 public class RoomWriter {
- private Scanner Room1;
+ private Scanner room1;
 	public void openRoom1() {
 		try {
-			Room1 = new Scanner(new File("room1.txt"));
+			room1 = new Scanner(new File("room1.txt"));
 		} catch (Exception e) {
 			System.out.println("file 1 not found");
 		}
 	}
 
 	public void readRoom1() {
-		while (Room1.hasNextLine()) {
-			String _room1 = Room1.nextLine();
+		while (room1.hasNextLine()) {
+			String _room1 = room1.nextLine();
 			System.out.println(_room1);
 		}
 	}
 
 	public void closeRoom1() {
-		Room1.close();
+		room1.close();
 	}
 
 
