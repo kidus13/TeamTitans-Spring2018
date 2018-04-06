@@ -1,8 +1,8 @@
 public class Test {
-Hello World 
-testing;
-billys world
-T was here
-kidus was here...hello hello
-New
-}
+	public static void main(String[] args) {
+		RoomWriter r = new RoomWriter();
+		r.openRoom1();
+		r.readRoom1();
+		r.closeRoom1();
+		
+	}}
