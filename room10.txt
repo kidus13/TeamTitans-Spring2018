@@ -1,0 +1,3 @@
+“This room is a completely dark old empty room,
+ which can only be entered by answering a puzzle correctly, 
+the door to the room opens up and the room light up” 

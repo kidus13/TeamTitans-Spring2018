@@ -46,8 +46,9 @@ public class Rooms {
 		
 		//should the roomid be changed to string since each level starts with that levels ID?
 		
+		//need to fix these, theyre out of order 4.6 Trivon
 		//Rooms EntranceRoom = new Rooms("WR01", "Entrance Room", room1, 1, 1);
-		Rooms VerKsrRoom = new Rooms("WR02", "VerKsr Room", null, 2, 2);
+		Rooms VerKsrRoom = new Rooms("WR02", "VerKsr Room", null, 2, 2); //verksr is room 10 actually
 		Rooms SarCoRoom = new Rooms("WR03", "SarCo Room", null, 3, 0 );
 		Rooms StalacticeRoom = new Rooms("WR04", "Stalactice Room", null, 4, 4);
 		Rooms CraftRoomStore= new Rooms("WR05", "Craft Store Room", null, 5, 5);

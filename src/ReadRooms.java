@@ -14,7 +14,17 @@ public class ReadRooms {
 		r.openRoom2();
 		r.readRoom2();
 		r.closeRoom2();
-	
+		
+		System.out.println("#################");
+		
+		r.openRoom3();
+		r.readRoom3();
+		r.closeRoom3();
+System.out.println("#################");
+		
+		r.openRoom4();
+		r.readRoom4();
+		r.closeRoom4();
 	}
 
 }
