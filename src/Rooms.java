@@ -76,18 +76,16 @@ public class Rooms {
 		Rooms FireCavern8 = new Rooms("FR08", "Fire Cavern 8", null, 24);
 		Rooms FireCavern9 = new Rooms("FR09", "Fire Cavern 9", null, 25);
 		Rooms FireCavern10= new Rooms("FR10", "Fire Cavern 10", null, 26);
-		Rooms = new Rooms("", "", "", 27);
-		Rooms = new Rooms("", "", "", 28);
-		Rooms = new Rooms("", "", "", 29);
-		Rooms = new Rooms("", "", "", 30);
-		Rooms = new Rooms("", "", "", 31);
-		Rooms = new Rooms("", "", "", 32);
-		Rooms = new Rooms("", "", "", 33);
-		Rooms = new Rooms("", "", "", 34);
-		Rooms = new Rooms("", "", "", 35);
-		Rooms = new Rooms("", "",3 "", 0, 0);
-		Rooms = new Rooms("", "", "", 0, 0);
-		Rooms = new Rooms("", "", "", 0, 0);
+		Rooms ArgonRoom = new Rooms("AR01", "Argon Room", null, 27);
+		Rooms AntarticRoom = new Rooms("AR02", "Antarctic Room", null, 28);
+		Rooms TornadoAlleyRoom = new Rooms("AR03", "Tornado Alley", null, 29);
+		Rooms CrosswindRoom = new Rooms("AR04", "Crosswind Room", null, 30);
+		Rooms AmericanEagleRoom = new Rooms("AR05", "American Eagle Room", null, 31);
+		Rooms MarianaRoom = new Rooms("AR06", "Mariana Room", null, 32);
+		Rooms RavenRoom = new Rooms("AR07", "Raven Room", null, 33);
+		Rooms WhiteOwlRoom = new Rooms("AR08", "White Owl Room", null, 34);
+		
+		//Rooms = new Rooms("", "", "", 0, 0);
 		
 	}
 
