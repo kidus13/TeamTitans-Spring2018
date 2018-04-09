@@ -71,6 +71,29 @@ private static Weapon EI05 = null;
 private static Weapon EI06 = null;
 private static Weapon EI07 = null;
 
+private static Weapon WI01 = null;
+private static Weapon WI02 = null;
+private static Weapon WI03 = null;
+private static Weapon WI04 = null;
+private static Weapon WI05 = null;
+private static Weapon WI06 = null;
+private static Weapon WI07 = null;
+
+private static Weapon FI01 = null;
+private static Weapon FI02 = null;
+private static Weapon FI03 = null;
+private static Weapon FI04 = null;
+
+
+private static Weapon AI01 = null;
+private static Weapon AI02 = null;
+private static Weapon AI03 = null;
+private static Weapon AI04 = null;
+private static Weapon AI05 = null;
+private static Weapon AI06 = null;
+private static Weapon AI07 = null;
+private static Weapon AI08 = null;
+
 /*** Methods ***/
 
 // constructor
