@@ -1,4 +1,4 @@
-import java.util.Random; 
+import java.util.Random;
 
 public class Weapon {
 /*** Public Constants ***/ 
@@ -84,7 +84,6 @@ private static Weapon FI02 = null;
 private static Weapon FI03 = null;
 private static Weapon FI04 = null;
 
-
 private static Weapon AI01 = null;
 private static Weapon AI02 = null;
 private static Weapon AI03 = null;
@@ -154,6 +153,27 @@ if (EI01 == null) {
 EI01 = new Weapon("Armor", ARMOR_MIN, ARMOR_MAX, 1, true, true, false, true);
 }
 return EI01;
-
 }
+
+public static Weapon getEI02 () {
+if (EI02 == null) {
+EI02 = new Weapon("Sword", SWORD_MIN, SWORD_MAX, 1, true, true, false, true);
+}
+return EI02;
+}
+
+public static Weapon getEI03() {
+if (EI03 == null) {
+EI03 = new Weapon("Torture Key", TORTURE_KEY_MIN, TORTURE_KEY_MAX, 1, true, true, false, true);
+}
+return EI03;
+}
+
+public static Weapon getEI04 () {
+if (EI04 == null) {
+EI04 = new Weapon("Water Bucket", WATER_BUCKET_MIN, WATER_BUCKET_MAX, 1, true, true, false, true);
+}
+return EI04;
+}
+
 }
