@@ -1,2 +1,6 @@
-Before the merchant leaves - “A small inhospitable cell. There is a merchant here that has been being harassed by the Jailer for far too long.”
-After the merchant leaves - “A small inhospitable cell.  It is currently empty except for yourself.”
+Cell - Room 6:
+Before the merchant leaves - “A small inhospitable cell.
+ There is a merchant here that has been being harassed 
+ by the Jailer for far too long.”
+After the merchant leaves - “A small inhospitable cell. 
+ It is currently empty except for yourself.”
