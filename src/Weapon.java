@@ -174,6 +174,5 @@ if (EI04 == null) {
 EI04 = new Weapon("Water Bucket", WATER_BUCKET_MIN, WATER_BUCKET_MAX, 1, true, true, false, true);
 }
 return EI04;
-}
-
+} 
 }
