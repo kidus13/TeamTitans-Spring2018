@@ -1,2 +1,5 @@
-“This room is slightly dark, with its only source of light being two unlit wall lamps and the sunlight coming from the windows. It seems small, and the only noticeable features are a chest 
-marked ‘Trade Goods’ and a door to another room.”
+Argon Room - Room 28:
+“This room is slightly dark, with its only source of
+ light being two unlit wall lamps and the sunlight coming
+  from the windows. It seems small, and the only noticeable
+ features are a chest marked ‘Trade Goods’ and a door to another room.”

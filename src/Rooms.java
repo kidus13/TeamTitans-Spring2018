@@ -77,7 +77,7 @@ public class Rooms {
 		Rooms FireCavern9 = new Rooms("FR09", "Fire Cavern 9", null, 25);
 		Rooms FireCavern10= new Rooms("FR10", "Fire Cavern 10", null, 26);
 		Rooms ArgonRoom = new Rooms("AR01", "Argon Room", null, 27);
-		Rooms AntarticRoom = new Rooms("AR02", "Antarctic Room", null, 28);
+		Rooms AntarcticRoom = new Rooms("AR02", "Antarctic Room", null, 28);
 		Rooms TornadoAlleyRoom = new Rooms("AR03", "Tornado Alley", null, 29);
 		Rooms CrosswindRoom = new Rooms("AR04", "Crosswind Room", null, 30);
 		Rooms AmericanEagleRoom = new Rooms("AR05", "American Eagle Room", null, 31);

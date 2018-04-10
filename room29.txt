@@ -1,2 +1,7 @@
-“This room is a decent size, very open with two  lamps to light the room on the south wall, as well as two windows on the north wall. A pudgy, penguin-like guard stands in the center, with a curved shortsword. He seems angry, but due to his size, 
-he cannot move very fast. To the east is a door to a hallway.”
+Antarctic Room - Room 29:
+ “This room is a decent size, very open with two  
+ lamps to light the room on the south wall, as well
+as two windows on the north wall. A pudgy, penguin-like
+guard stands in the center, with a curved shortsword. 
+He seems angry, but due to his size, he cannot move very 
+fast. To the east is a door to a hallway.”
