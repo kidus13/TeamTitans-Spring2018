@@ -146,44 +146,45 @@ public class Weapon {
 		return randomNum.nextInt(maxDamage - minDamage + 1);
 	}
 
-	// Methods for Weapons
-
-	public static void getEI01() {
-		 {
-			EI01 = new Weapon("Armor", ARMOR_MIN, ARMOR_MAX, 1, true, true, false, true);
-		}
-		System.out.println(EI01); 
-		}
-
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		return "Weapon [Type = " + getName() + ", getMinDamage()=" + getMinDamage() + ", getMaxDamage()="
-				+ getMaxDamage() + ", Trade Value = " + getTradeValue() + ", Equipable = " + isEquipable()
+		return "Weapon [Type = " + getName() + ", Trade Value = " + getTradeValue() + ", Equipable = " + isEquipable()
 				+ ", Droppable =" + isDroppable() + ", Useable = " + isUseable() + ", Tradable =" + isTradable()
 				+ ", Damage = " + getDamage() + "]";
 	}
 
-	public static Weapon getEI02() {
-		if (EI02 == null) {
+	// Methods for Weapons
+
+	public static void getEI01() {
+		{
+			EI01 = new Weapon("Armor", ARMOR_MIN, ARMOR_MAX, 1, true, true, false, true);
+		}
+		System.out.println(EI01);
+	}
+
+	public static void getEI02() {
+		{
 			EI02 = new Weapon("Sword", SWORD_MIN, SWORD_MAX, 1, true, true, false, true);
 		}
-		return EI02;
+		System.out.println(EI02);
 	}
 
-	public static Weapon getEI03() {
-		if (EI03 == null) {
+	public static void getEI03() {
+		{
 			EI03 = new Weapon("Torture Key", TORTURE_KEY_MIN, TORTURE_KEY_MAX, 1, true, true, false, true);
 		}
-		return EI03;
+		System.out.println(EI03);
 	}
 
-	public static Weapon getEI04() {
-		if (EI04 == null) {
+	public static void getEI04() {
+		{
 			EI04 = new Weapon("Water Bucket", WATER_BUCKET_MIN, WATER_BUCKET_MAX, 1, true, true, false, true);
 		}
-		return EI04;
+		System.out.println(EI04);
 	}
 }
