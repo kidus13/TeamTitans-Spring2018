@@ -1,2 +1,4 @@
-“A giant birdman in fancy garb looks at you with angst, ready to strike.
- The room is huge, and torches light it across the walls toward the ceiling.”
+Raven Room - Room 34: 
+“A giant birdman in fancy garb looks at you with
+ angst, ready to strike. The room is huge, and torches light
+ it across the walls toward the ceiling.”

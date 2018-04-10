@@ -10,25 +10,29 @@ import java.util.Scanner;
  *
  */
 public class RoomWriter {
+
 	private Scanner room1;
+
+
+ private Scanner Room1;
 
 	public void openRoom1() {
 		try {
-			room1 = new Scanner(new File("room1.txt"));
+			Room1 = new Scanner(new File("room1.txt"));
 		} catch (Exception e) {
 			System.out.println("file 1 not found");
 		}
 	}
 
 	public void readRoom1() {
-		while (room1.hasNextLine()) {
-			String _room1 = room1.nextLine();
-			System.out.println(_room1);
+		while (Room1.hasNextLine()) {
+			String _Room1 = Room1.nextLine();
+			System.out.println(_Room1);
 		}
 	}
 
 	public void closeRoom1() {
-		room1.close();
+		Room1.close();
 	}
 
 	// room2
