@@ -1,7 +1,13 @@
-public class Test {
+public class Test{
+
+
 	public static void main(String[] args) {
 		RoomWriter r = new RoomWriter();
-		r.openRoom1();
+		Weapon w = new Weapon(null, 0, 0, 0, false, false, false, false);
+		w.getEI02();
+//		Monster m = new Monster(null, 0, 0, w);
+//		m.getAM01();
+		/*r.openRoom1();
 		r.readRoom1();
 		r.closeRoom1();
 		
@@ -139,7 +145,11 @@ public class Test {
 		
 		r.openRoom35();
 		r.readRoom35();
-		r.closeRoom35();
+		r.closeRoom35();*/
+		
+	
+		Weapon.getEI01();
+		 
 
 	}
 }

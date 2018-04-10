@@ -11,6 +11,15 @@ public class Monster {
 	private Weapon weapon;
 
 	private static Monster EM01 = null;
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "Monster [getName()=" + getName() + ", getHelathPoints()=" + getHelathPoints() + ", getWeapon()="
+				+ getWeapon() + ", isDefeated()=" + isDefeated() + ", dropWeapon()=" + dropWeapon() + "]";
+	}
+
 	private static Monster EM02 = null;
 	private static Monster EM03 = null;
 	private static Monster WM01 = null;
@@ -30,11 +39,11 @@ public class Monster {
 	/*** Methods ***/
 
 	// constructor
-	public Monster(String _name, int _healthPoints, int _attackPoints, Weapon _weapon) {
+	public Monster(String _name, int _healthPoints, int _attackPoints, Object object) {
 		name = _name;
 		healthPoints = _healthPoints;
 		attackPoints = _attackPoints;
-		weapon = _weapon;
+		weapon = object;
 	}
 
 	public String getName() {
@@ -88,9 +97,9 @@ public class Monster {
 
 	public static Monster getEM01() {
 		if (EM01 == null) {
-			EM01 = new Monster("EM01", 100, 20, Weapon.getArmour(), Weapon.getLongSword(), Weapon.getTRKey());
+			EM01 = new Monster("EM01", 100, 20, Weapon.getEI01());
 		}
-		return EM01;
+		return getEM01();
 	}
 
 	public static Monster getEM02() {
