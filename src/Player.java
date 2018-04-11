@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Test extends Character {
+public class Player  extends Character {
 	public static void main(String[] args) {
 
 		RoomWriter r = new RoomWriter();
