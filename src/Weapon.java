@@ -18,7 +18,7 @@ public class Weapon {
 	public static final int EARTHEN_HELMET_MAX = 2;
 	public static final int HEALTH_POTION_MIN = 1;
 	public static final int HEALTH_POTION_MAX = 2;
-	public static final int FUNDA_MIN = 1;
+	public static  int FUNDA_MIN = 1;
 	public static final int FUNDA_MAX = 2;
 	public static final int XIPHOS_MIN = 1;
 	public static final int XIPHOS_MAX = 1;
