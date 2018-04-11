@@ -1,0 +1,7 @@
+EI06 - Earthen Helmet
+A strong and durable helmet.  This stony helmet
+ is imbued with the durability of Golems.
+
++7 Defense
++20 Health
+

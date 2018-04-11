@@ -1,0 +1,4 @@
+AI02 - Fancy Potion
+There is a fancy label: ‘Do not drink.’ 
+This must sell for a lot!
+

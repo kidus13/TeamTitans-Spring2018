@@ -1,0 +1,6 @@
+EI01 - Guards Armour
+Standard issue to many guards, this armor is simple and heavy,
+ but not as effective as many of the more expensive and rare armors
+
++2 Defense
++5 Health

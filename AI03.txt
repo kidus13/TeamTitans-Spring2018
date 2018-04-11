@@ -1,0 +1,2 @@
+AI03 - Cell Key
+Opens the cell guarded by a veteran guard.
