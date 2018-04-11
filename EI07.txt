@@ -1,0 +1,2 @@
+EI07 - Small Health Potion
+A small healing potion.  It heals a sizable amount, despite its size, but only once.
