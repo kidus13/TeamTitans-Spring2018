@@ -1,2 +1,6 @@
-“The hallway continues with big chunks of wall taken from both sides and wind blowing from various angles. With spike pits nearby, it’s imperative that you time your walk with wind patterns,
- lest you have heavy armor to keep you steady.”
+Crosswind Room - Room 31:
+“The hallway continues with big chunks of wall taken
+ from both sides and wind blowing from various angles.
+  With spike pits nearby, it’s imperative that you time
+ your walk with wind patterns,lest you have heavy armor
+to keep you steady.”

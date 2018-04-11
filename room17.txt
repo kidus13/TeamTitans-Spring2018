@@ -1,2 +1,3 @@
+Fire Hallway - Room 17:
 “This hallway extends to every  room and you 
 can use it to navigate from room to room quicker”
