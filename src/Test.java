@@ -31,6 +31,13 @@ public class Test {
 	public Weapon getWeapon() {
 		return weapon;
 	}
+	
+	public boolean isDefeated() {
+		if (healthPoint <= 0) {
+			return true;
+		}
+		return false;
+	}
 
 	// player attacks monster
 	public void attack(Monster _monster) {
@@ -98,37 +105,37 @@ public class Test {
 							}
 						
 					}
-					
-
-				}
-				break;
-			//default: // fail-safe
-				System.out.printf("\nInvalid input. %d is not an available option.\n\n", playerActionChoice);
+					System.out.printf("\nInvalid input.  is not an available option.\n\n", playerActionChoice);
 				System.exit(0);
 			}
 
 			if (EM01.getHealthPoints() <= 0) {
 				break;
 			}
-			Player.attack(this);
-		} // end while
+			//Player.attack(this);
+		 // end while
 
 		if (this.isDefeated()) {
-			System.out.printf("--%s is defeated in battle!--\n\nGAME OVER\n", name);
+			System.out.printf("--%s You Lost!! ", name);
 			System.exit(0);
+		
 		}
-	}
-}
+				break;
+		}	
+		}	
+			//default: // fail-safe
+				
+		
+
 
 	public static void main(String[] args) {
 
-		RoomWriter r = new RoomWriter();
+	//	RoomWriter r = new RoomWriter();
 		Weapon w = new Weapon(null, 0, 0, 0, false, false, false, false);
 		w.getEI02();
-		Monster m = new Monster(null, 0, 0);
-		m.getEM01();
+//		Monster m = new Monster(null, 0, 0);
+//		m.getEM01();
+		
+}
 
-		System.out.println(attack(null));
-
-	}
 }
