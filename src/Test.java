@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -126,16 +127,51 @@ public class Test {
 			//default: // fail-safe
 				
 		
+	// Add weapons collected into and array list
 
+		//public class weaponsArrayList {
+
+	public static void displayWeapons() {
+		System.out.println("\nWeapons Available: ");
+		if (list.isEmpty()) {
+			System.out.println("You have no weapons to display");
+		} else {
+
+			for (int i = 0; i < list.size(); i++) {
+
+				System.out.println(list.get(i));
+			}
+		}
+	}
+	
+			static ArrayList<String> list;
+			static Scanner scan;
+			static int n = 100;
+
+			public static void getWeaponArray() {
+				list = new ArrayList<String>();
+				scan = new Scanner(System.in);
+				
+				System.out.println("How many items would you like to grab :");
+				n = Integer.parseInt(scan.nextLine());
+				
+				System.out.println("Enter the data :");
+				for (int i = 0; i < n; i++) {
+					list.add(scan.next());
+					
+				}
+			}
+
+			
 
 	public static void main(String[] args) {
 
-	//	RoomWriter r = new RoomWriter();
-		Weapon w = new Weapon(null, 0, 0, 0, false, false, false, false);
-		w.getEI02();
-//		Monster m = new Monster(null, 0, 0);
-//		m.getEM01();
-		
+//	//	RoomWriter r = new RoomWriter();
+//		Weapon w = new Weapon(null, 0, 0, 0, false, false, false, false);
+//		w.getEI02();
+
+		getWeaponArray();
+		displayWeapons();
 }
 
 }

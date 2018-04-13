@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Weapon {
 
@@ -190,7 +192,7 @@ public class Weapon {
 		}
 		System.out.println(EI04);
 	}
-	
+
 	public static Weapon getEI05() {
 		if (EI05 == null) {
 			EI05 = new Weapon("Cell Key", CELL_KEY_MIN, CELL_KEY_MAX, 1, false, true, true, false);
