@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Weapon {
 
@@ -190,159 +192,159 @@ public class Weapon {
 		}
 		System.out.println(EI04);
 	}
-	
-	public static Weapon getEI05() {
-		if (EI05 == null) {
+
+	public static void getEI05() {
+		{
 			EI05 = new Weapon("Cell Key", CELL_KEY_MIN, CELL_KEY_MAX, 1, false, true, true, false);
 		}
-		return EI05;
+		System.out.println(EI05);
 	}
 
-	public static Weapon getEI06() {
-		if (EI06 == null) {
+	public static void getEI06() {
+		{
 			EI06 = new Weapon("Earthen Helmet", EARTHEN_HELMET_MIN, EARTHEN_HELMET_MAX, 1, true, true, false, true);
 		}
-		return EI06;
+		System.out.println (EI06);
 	}
 
-	public static Weapon getEI07() {
-		if (EI07 == null) {
+	public static void getEI07() {
+		 {
 			EI07 = new Weapon("Health Potion", HEALTH_POTION_MIN, HEALTH_POTION_MAX, 1, false, true, true, true);
-		}
-		return EI07;
+		 }
+		 System.out.println (EI07);
 	}
 
-	public static Weapon getWI01() {
-		if (WI01 == null) {
+	public static void getWI01() {
+		{
 			WI01 = new Weapon("Funda", FUNDA_MIN, FUNDA_MAX, 1, true, true, true, true);
 		}
-		return WI01;
+		System.out.println (WI01);
 	}
 
-	public static Weapon getWI02() {
-		if (WI02 == null) {
+	public static void getWI02() {
+		{
 			WI02 = new Weapon("Xiphos", XIPHOS_MIN, XIPHOS_MAX, 1, true, true, true, true);
 		}
-		return WI02;
+		System.out.println (WI02);
 	}
 
-	public static Weapon getWI03() {
-		if (WI03 == null) {
+	public static void getWI03() {
+		{
 			WI03 = new Weapon("Actinolite", ACTINOLITE_MIN, ACTINOLITE_MIN, 1, true, true, true, true);
 		}
-		return WI03;
+		System.out.println (WI03);
 	}
 
-	public static Weapon getWI04() {
-		if (WI04 == null) {
+	public static void getWI04() {
+		{
 			WI04 = new Weapon("Crek", CREK_MIN, CREK_MAX, 1, true, true, true, true);
 		}
-		return WI04;
+		System.out.println (WI04);
 	}
 
-	public static Weapon getWI05() {
-		if (WI05 == null) {
+	public static void getWI05() {
+		{
 			WI05 = new Weapon("Krec", KREC_MIN, KREC_MAX, 1, true, true, true, true);
 		}
-		return WI05;
+		System.out.println (WI05);
 	}
 
-	public static Weapon getWI06() {
-		if (WI06 == null) {
+	public static void getWI06() {
+		{
 			WI06 = new Weapon("Erck", ERCK_MIN, ERCK_MAX, 1, true, true, true, true);
 		}
-		return WI06;
+		System.out.println (WI06);
 	}
 
-	public static Weapon getWI07() {
-		if (WI07 == null) {
+	public static void getWI07() {
+		{
 			WI07 = new Weapon("Leuck", LEUCK_MIN, LEUCK_MAX, 1, true, true, true, true);
 		}
-		return WI07;
+		System.out.println (WI07);
 	}
 
-	public static Weapon getFI01() {
-		if (FI01 == null) {
+	public static void getFI01() {
+		{
 			FI01 = new Weapon("Molten Lava Sword", MOLTEN_LAVA_SWORD_MIN, MOLTEN_LAVA_SWORD_MAX, 1, true, true, false,
 					true);
 		}
-		return FI01;
+		System.out.println (FI01);
 	}
 
-	public static Weapon getFI02() {
-		if (FI02 == null) {
+	public static void getFI02() {
+		{
 			FI02 = new Weapon("Lava Gauntlets", LAVA_GAUNTLETS_MIN, LAVA_GAUNTLETS_MAX, 1, true, true, false, true);
 		}
-		return FI02;
+		System.out.println (FI02);
 	}
 
-	public static Weapon getFI03() {
-		if (FI03 == null) {
+	public static void getFI03() {
+		{
 			FI03 = new Weapon("Flame Key", FLAME_KEY_MIN, FLAME_KEY_MAX, 1, false, true, true, true);
 		}
-		return FI03;
+		System.out.println (FI03);
 	}
 
-	public static Weapon getFI04() {
-		if (FI04 == null) {
+	public static void getFI04() {
+		{
 			FI04 = new Weapon("Flame Potion", FLAME_POTION_MIN, FLAME_POTION_MAX, 1, false, true, true, true);
 		}
-		return FI04;
+		System.out.println (FI04);
 	}
 
-	public static Weapon getAI01() {
-		if (AI01 == null) {
+	public static void getAI01() {
+		{
 			AI01 = new Weapon("Breeze Key", BREEZE_KEY_MIN, BREEZE_KEY_MAX, 1, false, false, true, true);
 		}
-		return AI01;
+		System.out.println (AI01);
 	}
 
-	public static Weapon getAI02() {
-		if (AI02 == null) {
+	public static void getAI02() {
+		{
 			AI02 = new Weapon("Fancy Potion", FANCY_POTION_MIN, FANCY_POTION_MAX, 1, false, true, true, true);
 		}
-		return AI02;
+		System.out.println (AI02);
 	}
 
-	public static Weapon getAI03() {
-		if (AI03 == null) {
+	public static void getAI03() {
+		{
 			AI03 = new Weapon("Cell Key", CELL_KEY_MIN, CELL_KEY_MAX, 1, false, false, true, false);
 		}
-		return AI03;
+		System.out.println (AI03);
 	}
 
-	public static Weapon getAI04() {
-		if (AI04 == null) {
+	public static void getAI04() {
+		{
 			AI04 = new Weapon("Shop Key", SHOP_KEY_MIN, SHOP_KEY_MAX, 1, false, true, true, false);
 		}
-		return AI04;
+		System.out.println (AI04);
 	}
 
-	public static Weapon getAI05() {
-		if (AI05 == null) {
+	public static void getAI05() {
+		{
 			AI05 = new Weapon("Crown of Wings", WINGS_MIN, WINGS_MAX, 1, true, true, true, true);
 		}
-		return AI05;
+		System.out.println (AI05);
 	}
 
-	public static Weapon getAI06() {
-		if (AI06 == null) {
+	public static void getAI06() {
+		{
 			AI06 = new Weapon("Gilded Sword", GILDED_SWORD_MIN, GILDED_SWORD_MAX, 1, true, true, true, true);
 		}
-		return AI06;
+		System.out.println (AI06);
 	}
 
-	public static Weapon getAI07() {
-		if (AI07 == null) {
+	public static void getAI07() {
+		{
 			AI07 = new Weapon("Gilded Plate", GILDED_PLATE_MIN, GILDED_PLATE_MAX, 1, true, true, true, true);
 		}
-		return AI07;
+		System.out.println (AI07);
 	}
 
-	public static Weapon getAI08() {
-		if (AI08 == null) {
+	public static void getAI08() {
+		{
 			AI08 = new Weapon("Gilded Helm", GILDED_HELM_MIN, GILDED_HELM_MAX, 1, true, true, true, true);
 		}
-		return AI08;
+		System.out.println (AI08);
 	}
 }
