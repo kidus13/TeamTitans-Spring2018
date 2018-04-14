@@ -12,6 +12,22 @@ public class Rooms {
 		System.out.println("The door is locked. You need the key to open it.");
 		return false;
 	}
+	
+	public boolean isDoorLocked() {
+		
+		int doorLocked = 0;
+		if(doorLocked  <= 0) {
+			return true;
+		}
+		//System.out.println("")
+		return false;
+		}
+		
+	
+	public boolean hasKey(){
+		return false;
+		
+	}
 
 	//ummmmm need to look into this more because i know im missing something so let me look it up - 4.10
 }	  

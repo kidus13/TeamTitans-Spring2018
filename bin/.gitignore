@@ -1,7 +1,18 @@
-<<<<<<< HEAD
-/.gitignore
-=======
+/Character.class
+/GUI$1.class
+/GUI$2.class
+/GUI$3.class
+/GUI$4.class
+/GUI$7.class
+/GUI$5.class
+/GUI$6.class
+/GUI.class
+/GameController.class
+/GameMain.class
+/GameModel.class
+/GameRunMVC.class
 /Monster.class
+/Player.class
 /Puzzles.class
 /ReadRooms.class
 /RoomWriter.class
@@ -11,5 +22,3 @@
 /View.class
 /Weapon.class
 /WeaponsWriter.class
-/Player.class
->>>>>>> b2c668997610db013dd5270b3021aebab467e2be
