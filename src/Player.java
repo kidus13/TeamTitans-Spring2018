@@ -11,7 +11,7 @@ public class Player {
 		Monster m = new Monster("", 0, 0);
 		Weapon w = new Weapon("", 0, 0, 0, false, false, false, false);
 		Battle b = new Battle();
-
+ 
 		Scanner input = new Scanner(System.in);
 		boolean inRoom = false;
 
