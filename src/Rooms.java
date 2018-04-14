@@ -9,6 +9,7 @@ public class Rooms {
 		if (doorOpen <= 0) {
 			return true;
 		}
+		System.out.println("The door is locked. You need the key to open it.");
 		return false;
 	}
 
