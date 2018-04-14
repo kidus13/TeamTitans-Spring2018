@@ -70,7 +70,7 @@ public class Weapon {
 	private static Weapon EI02 = null;
 	private static Weapon EI03 = null;
 	private static Weapon EI04 = null;
-	private static Weapon EI05 = null;
+	private static Weapon EI05 = null; //key
 	private static Weapon EI06 = null;
 	private static Weapon EI07 = null;
 
