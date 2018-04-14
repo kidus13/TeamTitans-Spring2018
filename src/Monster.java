@@ -5,8 +5,8 @@ public class Monster {
 
 	/*** Attributes ***/
 
-	private String name;
-	private int healthPoints;
+	private static String name;
+	private static int healthPoints;
 	private static int attackPoints;
 	private Weapon weapon;
 
@@ -58,9 +58,9 @@ public class Monster {
 	}
 
 	// enemy attacks player
-	public void attack(Player _player) {
-		int weaponDamage = weapon.getDamage();
-		int attack = strength + weaponDamage;
+//	public void attack(Player _player) {
+//		int weaponDamage = weapon.getDamage();
+//		int attack = strength + weaponDamage;
 
 
 	public boolean isDefeated() {
@@ -91,7 +91,7 @@ public class Monster {
 	 */
 	@Override
 	public String toString() {
-		return "Monster [Name = " + getName() + ", Health Points =" + getHealthPoints() + "]";
+		return "Monster [Name = " + getName() + ", Health Points =" + getHealthPoints() + ", Strength = " + getAttackPoints() + "]";
 	}
 
 	// Monster Methods
@@ -138,11 +138,11 @@ public class Monster {
 		System.out.println(WM03);
 	}
 
-	public static void getWM04() {
+	public static Monster getWM04() {
 		{
 			WM04 = new Monster("ArGhai", 100, 20);
 		}
-		System.out.println(WM04);
+		return WM04;
 	}
 
 }
