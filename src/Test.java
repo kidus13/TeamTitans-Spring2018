@@ -7,7 +7,7 @@ public class Test {
 		RoomWriter r = new RoomWriter();
 		Character p = new Character("", 0, 0);
 		Monster m = new Monster("", 0, 0);
-		Weapon w = new Weapon("", 0, 0, 0, false, false, false, false);
+		Weapon w = new Weapon("", 0, 0, 0, 0, 0, false, false, false, false);
 		Battle b = new Battle();
 		WeaponsWriter wr = new WeaponsWriter();
 		

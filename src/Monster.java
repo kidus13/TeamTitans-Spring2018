@@ -9,7 +9,7 @@ public class Monster {
 	private static int healthPoints;
 	private static int attackPoints;
 	private Weapon weapon;
-	Weapon w = new Weapon("", 0, 0, 0, false, false, false, false);
+	Weapon w = new Weapon("", 0, 0, 0, 0, 0, false, false, false, false);
 	Character c = new Character("", 0, 0);
 	
 	private static Monster EM01 = null;
