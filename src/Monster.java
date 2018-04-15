@@ -9,7 +9,9 @@ public class Monster {
 	private static int healthPoints;
 	private static int attackPoints;
 	private Weapon weapon;
-
+	Weapon w = new Weapon("", 0, 0, 0, false, false, false, false);
+	Character c = new Character("", 0, 0);
+	
 	private static Monster EM01 = null;
 	private static Monster EM02 = null;
 	private static Monster EM03 = null;
@@ -48,9 +50,15 @@ public class Monster {
 		return attackPoints;
 	}
 
-	public void decreaseHealthPoints(int decreasePoints) /* not sure how to implement this yet */
+	public int decreaseHealthPoints(int decreasePoints) /* not sure how to implement this yet */
 	{
-		healthPoints -= decreasePoints;
+		
+		int weaponDamage = 0;
+		int attackPoints = 100;
+		int monsterHP = getHealthPoints();
+		int decreaseMHP = monsterHP - (weaponDamage + attackPoints);
+		return decreaseMHP;
+				
 	}
 
 	public Weapon getWeapon() {
@@ -138,7 +146,7 @@ public class Monster {
 		System.out.println(WM03);
 	}
 
-	public static Monster getWM04() {
+	public Monster getWM04() {
 		{
 			WM04 = new Monster("ArGhai", 100, 20);
 		}

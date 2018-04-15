@@ -4,14 +4,17 @@ import java.util.Scanner;
 public class Battle {
 	Weapon w = new Weapon(getName(), 0, 0, 0, false, false, false, false);
 	Character c = new Character(getName(), 0, 0);
+	Monster m = new Monster(" ", 0, 0);
 
+	int playerAttackPoints = 10;
+	
+	// Player attacks monster
 	public void attack(Monster _monster) {
-		int weaponDamage = w.getDamage();
-		int attack = weaponDamage;
+		int weaponDamage = w.getAI01().getDamage();
+		int attackPoints = c.getPlayerAttackPoints();
 		int monsterHP = _monster.getHealthPoints();
-		_monster.decreaseHealthPoints(attack);
-		System.out.printf("%s attacks with ATK = %d + %d = %d\n", getName(), weaponDamage, attack, monsterHP);
-
+		int decreaseHealthPoints = monsterHP - (weaponDamage + attackPoints);		
+		System.out.println(decreaseHealthPoints);
 	}
 
 	public boolean isPlayerDefeated(Character _player) {
@@ -31,7 +34,7 @@ public class Battle {
 		int attack = 0;
 		int monsterHP = _monster.getHealthPoints();
 		_monster.decreaseHealthPoints(attack);
-		System.out.printf("%s attacks with ATK = %d + %d = %d\n", getName(), attack, monsterHP);
+		System.out.println(monsterHP);
 
 	}
 
