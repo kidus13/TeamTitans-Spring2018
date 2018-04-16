@@ -9,7 +9,7 @@ public class Monster {
 	private static int monsterHP;
 	private static int monsterAP;
 	private Weapon weapon;
-	Weapon w = new Weapon("", 0, 0, 0, 0, 0, false, false, false, false);
+	Weapon w = new Weapon("",  0, 0, 0, 0, 0, false, false, false, false);
 	Character c = new Character("", 0, 0);
 	
 	private static Monster EM01 = null;
@@ -27,7 +27,9 @@ public class Monster {
 	private static Monster AM02 = null;
 	private static Monster AM03 = null;
 	private static Monster AM04 = null;
-	private static Monster mAM05 = null;
+	private static Monster AM05 = null;
+	
+	
 
 	/*** Methods ***/
 
@@ -99,58 +101,122 @@ public class Monster {
 	 */
 	@Override
 	public String toString() {
-		return "Monster [Name = " + getName() + ", Health Points =" + getMonsterHP() + ", Strength = " + getMonsterAP() + "]";
+		return "Monster [Name = " + getName() + ", Health Points =" + getMonsterHP() + ", Attack Points = " + getMonsterAP() + "]";
 	}
 
 	// Monster Methods
 
 	public static Monster getEM01() {
 		{
-			EM01 = new Monster("Guard", 100, 20);
+			EM01 = new Monster("Guard", 10, 2);
 		}
 		return EM01;
 	}
 
 	public static Monster getEM02() {
 		{
-			EM02 = new Monster("Jailer", 100, 20);
+			EM02 = new Monster("Jailer", 10, 1);
 		}
 		return EM02;
 	}
 
 	public static Monster getEM03() {
 		{
-			EM03 = new Monster("Earth Golem", 100, 20);
+			EM03 = new Monster("Earth Golem", 200, 1);
 		}
 		return EM03;
 	}
 
 	public static Monster getWM01() {
 		{
-			WM01 = new Monster("Cenor c11", 100, 20);
+			WM01 = new Monster("Cenor c11", 150, 35);
 		}
 		return WM01;
 	}
 
 	public static Monster getWM02() {
 		{
-			WM02 = new Monster("Cenor c12", 100, 20);
+			WM02 = new Monster("Cenor c12", 175, 45);
 		}
 		return WM02;
 	}
 
 	public static Monster getWM03() {
 		{
-			WM03 = new Monster("LyyFx", 100, 20);
+			WM03 = new Monster("LyyFx", 250, 50);
 		}
 		return WM03;
 	}
 
-	public Monster getWM04() {
+	public static Monster getWM04() {
 		{
-			WM04 = new Monster("ArGhai", 100, 20);
+			WM04 = new Monster("ArGhai", 300, 75);
 		}
 		return WM04;
 	}
+	
+	public static Monster getFM01() {
+		{
+			FM01 = new Monster("Fire Lord Alucard", 315, 100);
+		}
+		return FM01;
+	}
+
+	public static Monster getFM02() {
+		{
+			FM02 = new Monster("Ultimate HellFire Beast", 350, 85);
+		}
+		return FM02;
+	}
+
+	public static Monster getFM03() {
+		{
+			FM03 = new Monster("Lava Queen Fluffy", 400, 150);
+		}
+		return FM03;
+	}
+
+	public static Monster getFM04() {
+		{
+			FM04 = new Monster("Treasure Keeper Absolute Blue", 500, 100);
+		}
+		return FM04;
+	}
+
+	public static Monster getAM01() {
+		{
+			AM01 = new Monster("Penguin Guard", 415, 100);
+		}
+		return AM01;
+	}
+
+	public static Monster getAM02() {
+		{
+			AM02 = new Monster("Bat Squire", 450, 125);
+		}
+		return AM02;
+	}
+
+	public static Monster getAM03() {
+		{
+			AM03 = new Monster("Veteran Eagle", 475, 150);
+		}
+		return AM03;
+	}
+
+	public static Monster getAM04() {
+		{
+			AM04 = new Monster("King Flightgrand IV", 550, 200);
+		}
+		return AM04;
+	}
+
+	public static Monster getAM05() {
+		{
+			AM05 = new Monster("King Flightgrand IV", 1000, 200);
+		}
+		return AM05;
+	}
+
 
 }
