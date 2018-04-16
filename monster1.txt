@@ -1,0 +1,4 @@
+If Awake - A regular Guard, he seems to have just woken up
+If Asleep - A regular Guard, he seems to be taking a nap.  
+Perhaps I can sneak by
+Receives +50% damage if attacked while asleep

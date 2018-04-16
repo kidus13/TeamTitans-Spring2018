@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class RoomWriter {
 
-	private Scanner room1;
+	//private Scanner room1;
 
 
  private Scanner Room1;
