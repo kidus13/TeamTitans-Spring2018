@@ -80,6 +80,7 @@ public class Player {
 								if (choice.equalsIgnoreCase("yes")) {
 									for(int i = 0; i<inv.size(); i++){
 									if(inv.get(i)==null)
+									inv.add(Weapon.getEI05());
 									}
 									System.out.println(inv + "\n");
 							}
@@ -89,7 +90,7 @@ public class Player {
 						System.out.println("Be careful a monster could pop out of a corner");
 					}
 
-				}
+					
 
 				// room3
 				if (room == 3) {
@@ -275,5 +276,6 @@ public class Player {
 			}
 		}
 	}
+}
 }
 }

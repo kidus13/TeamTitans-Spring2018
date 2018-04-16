@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Battle {
-	Weapon w = new Weapon(getName(), 0, 0, 0, false, false, false, false);
+	Weapon w = new Weapon("", 0, 0, 0, 0, 0, false, false, false, false);
 	Character c = new Character(getName(), 0, 0);
 	Monster m = new Monster(" ", 0, 0);
 
