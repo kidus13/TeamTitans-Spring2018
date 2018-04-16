@@ -13,7 +13,7 @@ public class Test {
 		
 
 		Scanner keyboard = new Scanner(System.in);
-		while (m.getWM04().getHealthPoints() > 0) {
+		while (m.getWM04().getMonsterHP() > 0) {
 			System.out.println("Choose your action:\n1. Attack\n2. Flee\n");
 			System.out.print("What would you like to do: ");
 			int playerActionChoice = keyboard.nextInt();
@@ -23,7 +23,7 @@ public class Test {
 			case 1: // Attack
 				b.attack(m.getWM04());
 				b.attack(m.getWM04());
-				m.getWM04().decreaseHealthPoints(10000);
+				m.getWM04().decreaseMPH(10000);
 				System.out.println(m.getWM04().isDefeated());
 				break;
 //			case 2: // Flee
@@ -54,7 +54,7 @@ public class Test {
 				System.exit(0);
 		}
 
-			if (m.getWM04().getHealthPoints() <= 0) {
+			if (m.getWM04().getMonsterHP() <= 0) {
 				System.out.println("Monster is dead");
 			
 			}

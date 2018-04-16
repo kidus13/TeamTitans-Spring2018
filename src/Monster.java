@@ -6,8 +6,8 @@ public class Monster {
 	/*** Attributes ***/
 
 	private static String name;
-	private static int healthPoints;
-	private static int attackPoints;
+	private static int monsterHP;
+	private static int monsterAP;
 	private Weapon weapon;
 	Weapon w = new Weapon("", 0, 0, 0, 0, 0, false, false, false, false);
 	Character c = new Character("", 0, 0);
@@ -32,30 +32,30 @@ public class Monster {
 	/*** Methods ***/
 
 	// constructor
-	public Monster(String _name, int _healthPoints, int _attackPoints) {
+	public Monster(String _name, int _monsterHP, int _monsterAP) {
 		name = _name;
-		healthPoints = _healthPoints;
-		attackPoints = _attackPoints;
+		monsterHP = _monsterHP;
+		monsterAP = _monsterAP;
 	}
 
 	public String getName() {
 		return name;
 	}
 
-	public int getHealthPoints() {
-		return healthPoints;
+	public int getMonsterHP() {
+		return monsterHP;
 	}
 
-	public static int getAttackPoints() {
-		return attackPoints;
+	public static int getMonsterAP() {
+		return monsterAP;
 	}
 
-	public int decreaseHealthPoints(int decreasePoints) /* not sure how to implement this yet */
+	public int decreaseMPH(int decreasePoints) /* not sure how to implement this yet */
 	{
 		
 		int weaponDamage = 0;
 		int attackPoints = 100;
-		int monsterHP = getHealthPoints();
+		int monsterHP = getMonsterHP();
 		int decreaseMHP = monsterHP - (weaponDamage + attackPoints);
 		return decreaseMHP;
 				
@@ -72,7 +72,7 @@ public class Monster {
 
 
 	public boolean isDefeated() {
-		if (healthPoints <= 0) {
+		if (monsterHP <= 0) {
 			return true;
 		}
 		return false;
@@ -81,7 +81,7 @@ public class Monster {
 	// method for weapon dropped by monster
 	public boolean dropWeapon() /* need to figure out if this is correct */
 	{
-		if (healthPoints <= 0) {
+		if (monsterHP <= 0) {
 			return true;
 		}
 		return false;
@@ -89,7 +89,7 @@ public class Monster {
 
 	// which method is called depends on which path is taken
 	public static int getDamageToPlayer() {
-		return randomNum.nextInt(1) + getAttackPoints();
+		return randomNum.nextInt(1) + getMonsterAP();
 	}
 
 	/*
@@ -99,51 +99,51 @@ public class Monster {
 	 */
 	@Override
 	public String toString() {
-		return "Monster [Name = " + getName() + ", Health Points =" + getHealthPoints() + ", Strength = " + getAttackPoints() + "]";
+		return "Monster [Name = " + getName() + ", Health Points =" + getMonsterHP() + ", Strength = " + getMonsterAP() + "]";
 	}
 
 	// Monster Methods
 
-	public static void getEM01() {
+	public static Monster getEM01() {
 		{
 			EM01 = new Monster("Guard", 100, 20);
 		}
-		System.out.println(EM01);
+		return EM01;
 	}
 
-	public static void getEM02() {
+	public static Monster getEM02() {
 		{
 			EM02 = new Monster("Jailer", 100, 20);
 		}
-		System.out.println(EM02);
+		return EM02;
 	}
 
-	public static void getEM03() {
+	public static Monster getEM03() {
 		{
 			EM03 = new Monster("Earth Golem", 100, 20);
 		}
-		System.out.println(EM03);
+		return EM03;
 	}
 
-	public static void getWM01() {
+	public static Monster getWM01() {
 		{
 			WM01 = new Monster("Cenor c11", 100, 20);
 		}
-		System.out.println(WM01);
+		return WM01;
 	}
 
-	public static void getWM02() {
+	public static Monster getWM02() {
 		{
 			WM02 = new Monster("Cenor c12", 100, 20);
 		}
-		System.out.println(WM02);
+		return WM02;
 	}
 
-	public static void getWM03() {
+	public static Monster getWM03() {
 		{
 			WM03 = new Monster("LyyFx", 100, 20);
 		}
-		System.out.println(WM03);
+		return WM03;
 	}
 
 	public Monster getWM04() {
