@@ -1,0 +1,2 @@
+Guard Monster “CenOrc l1” - Monster 4
+This monster is the guard of the sarcophagus room. 

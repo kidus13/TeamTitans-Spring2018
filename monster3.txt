@@ -1,0 +1,6 @@
+Earth Golem - Monster 3
+Large and durable, this golem is quite fast, and won’t let
+ you go to the next floor. However, it doesn’t seem to be 
+ trying to kill you. It only has a 25% chance of doing damage
+ even without water. After splashing with water, you can simply
+run past the golem, as it has slowed down
