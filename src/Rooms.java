@@ -12,7 +12,8 @@ public class Rooms {
 		System.out.println("The door is locked. You need the key to open it.");
 		return false;
 	}
-	
+	//can we associate these with the items specifically 
+	// ifhas(item) ?
 	public boolean isDoorLocked() {
 		
 		int doorLocked = 0;
