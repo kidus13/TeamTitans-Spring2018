@@ -22,7 +22,7 @@ public static final int WATER_BUCKET_HEALTH = 0;
 public static final int WATER_BUCKET_MIN = 180;
 public static final int WATER_BUCKET_MAX = 180;
 public static final int CELL_KEY1_DEFENSE = 0;
-public static final int CELL_KEY1_HEALTH = 0;;
+public static final int CELL_KEY1_HEALTH = 0;
 public static final int CELL_KEY1_MIN = 0;
 public static final int CELL_KEY1_MAX = 0;
 public static final int EARTHEN_HELMET_DEFENSE = 7;
@@ -234,186 +234,188 @@ return "Weapon [Type = " + getName() + ", Add Defense = " + getAddDefense() + ",
 
 // Methods for Weapons
 
-public static void getEI01() {
+public static Weapon getEI01() {
 	{
 		EI01 = new Weapon("Armor", ARMOR_DEFENSE, ARMOR_HEALTH, ARMOR_MIN, ARMOR_MAX, 1, true, true, false, true);
 	}
-	System.out.println(EI01);
+	return EI01;
 }
 
-public static void getEI02() {
+
+
+public static Weapon getEI02() {
 	{
 		EI02 = new Weapon("Sword", SWORD_DEFENSE, SWORD_HEALTH, SWORD_MIN, SWORD_MAX, 1, true, true, false, true);
 	}
-	System.out.println(EI02);
+	return EI02;
 }
 
-public static void getEI03() {
+public static Weapon getEI03() {
 	{
 		EI03 = new Weapon("Torture Key", TORTURE_KEY_DEFENSE, TORTURE_KEY_HEALTH, TORTURE_KEY_MIN, TORTURE_KEY_MAX, 0, true, true, false, true);
 	}
-	System.out.println(EI03);
+	return EI03;
 }
 
-public static void getEI04() {
+public static Weapon getEI04() {
 	{
 		EI04 = new Weapon("Water Bucket", WATER_BUCKET_DEFENSE, WATER_BUCKET_HEALTH, WATER_BUCKET_MIN, WATER_BUCKET_MAX, 0, true, true, false, true);
 	}
-	System.out.println(EI04);
+	return EI04;
 }
 
-public static void getEI05() {
+public static Weapon getEI05() {
 	{
 		EI05 = new Weapon("Cell Key1", CELL_KEY1_DEFENSE, CELL_KEY1_HEALTH, CELL_KEY1_MIN, CELL_KEY1_MAX, 0, false, true, true, false);
 	}
-	System.out.println(EI05);
+	return EI05;
 }
 
-public static void getEI06() {
+public static Weapon getEI06() {
 	{
 		EI06 = new Weapon("Earthen Helmet", EARTHEN_HELMET_DEFENSE, EARTHEN_HELMET_HEALTH, EARTHEN_HELMET_MIN, EARTHEN_HELMET_MAX, 3, true, true, false, true);
 	}
-	System.out.println(EI06);
+	return EI06;
 }
 
-public static void getEI07() {
+public static Weapon getEI07() {
 	{
 		EI07 = new Weapon("Health Potion", HEALTH_POTION_DEFENSE, HEALTH_POTION_HEALTH, HEALTH_POTION_MIN, HEALTH_POTION_MAX, 2, false, true, true, true);
-}
-	System.out.println(EI07);
+	}
+	return EI07;
 }
 
-public static void getWI01() {
+public static Weapon getWI01() {
 	{
 		WI01 = new Weapon("Funda", FUNDA_DEFENSE, FUNDA_HEALTH, FUNDA_MIN, FUNDA_MAX, 6, true, true, true, true);
 	}
-	System.out.println(WI01);
+	return WI01;
 }
 
-public static void getWI02() {
+public static Weapon getWI02() {
 	{
 		WI02 = new Weapon("Xiphos", XIPHOS_DEFENSE, XIPHOS_HEALTH, XIPHOS_MIN, XIPHOS_MAX, 5, true, true, true, true);
 	}
-	System.out.println(WI02);
+	return WI02;
 }
 
-public static void getWI03() {
+public static Weapon getWI03() {
 	{
 		WI03 = new Weapon("Actinolite", ACTINOLITE_DEFENSE, ACTINOLITE_HEALTH, ACTINOLITE_MIN, ACTINOLITE_MIN, 5, true, true, true, true);
 	}	
-	System.out.println(WI03);
+	return WI03;
 }
 
-public static void getWI04() {
+public static Weapon getWI04() {
 	{
 		WI04 = new Weapon("Crek", CREK_DEFENSE, CREK_HEALTH, CREK_MIN, CREK_MAX, 4, true, true, true, true);
 	}
-	System.out.println(WI04);
+	return WI04;
 }
 
-public static void getWI05() {
+public static Weapon getWI05() {
 	{
 		WI05 = new Weapon("Krec", KREC_DEFENSE, KREC_HEALTH, KREC_MIN, KREC_MAX, 3, true, true, true, true);
 	}
-	System.out.println(WI05);
+	return WI05;
 }
 
-public static void getWI06() {
+public static Weapon getWI06() {
 	{
 		WI06 = new Weapon("Erck", ERCK_DEFENSE, ERCK_HEALTH, ERCK_MIN, ERCK_MAX, 3, true, true, true, true);
 	}
-	System.out.println(WI06);
+	return WI06;
 }
 
-public static void getWI07() {
+public static Weapon getWI07() {
 	{
 		WI07 = new Weapon("Leuck", LEUCK_DEFENSE, LEUCK_HEALTH, LEUCK_MIN, LEUCK_MAX, 3, true, true, true, true);
 	}
-	System.out.println(WI07);
+	return WI07;
 }
 
-public static void getFI01() {
+public static Weapon getFI01() {
 	{
 		FI01 = new Weapon("Molten Lava Sword", MOLTEN_LAVA_SWORD_DEFENSE, MOLTEN_LAVA_SWORD_HEALTH, MOLTEN_LAVA_SWORD_MIN, MOLTEN_LAVA_SWORD_MAX, 7, true, true, false,
 				true);
 	}
-	System.out.println(FI01);
+	return FI01;
 }
 
-public static void getFI02() {
+public static Weapon getFI02() {
 	{
 		FI02 = new Weapon("Lava Gauntlets", LAVA_GAUNTLETS_DEFENSE, LAVA_GAUNTLETS_HEALTH, LAVA_GAUNTLETS_MIN, LAVA_GAUNTLETS_MAX, 8, true, true, false, true);
 	}
-	System.out.println(FI02);
+	return FI02;
 }
 
-public static void getFI03() {
+public static Weapon getFI03() {
 	{
 		FI03 = new Weapon("Flame Key", FLAME_KEY_DEFENSE, FLAME_KEY_HEALTH, FLAME_KEY_MIN, FLAME_KEY_MAX, 9, false, true, true, true);
 	}
-	System.out.println(FI03);
+	return FI03;
 }
 
-public static void getFI04() {
+public static Weapon getFI04() {
 	{
 		FI04 = new Weapon("Flame Potion", FLAME_POTION_DEFENSE, FLAME_POTION_HEALTH, FLAME_POTION_MIN, FLAME_POTION_MAX, 4, false, true, true, true);
 	}
-	System.out.println(FI04);
+	return FI04;
 }
 
-public static void getAI01() {
+public static Weapon getAI01() {
 	{
 		AI01 = new Weapon("Breeze Key", BREEZE_KEY_DEFENSE, BREEZE_KEY_HEALTH, BREEZE_KEY_MIN, BREEZE_KEY_MAX, 0, false, false, true, true);
 	}
-	System.out.println(AI01);
+	return AI01;
 }
 
-public static void getAI02() {
+public static Weapon getAI02() {
 	{
 		AI02 = new Weapon("Fancy Potion", FANCY_POTION_DEFENSE, FANCY_POTION_HEALTH, FANCY_POTION_MIN, FANCY_POTION_MAX, 0, false, true, true, true);
 	}
-	System.out.println(AI02);
+	return AI02;
 }
 
-public static void getAI03() {
+public static Weapon getAI03() {
 	{
 		AI03 = new Weapon("Cell Key2", CELL_KEY2_DEFENSE, CELL_KEY2_HEALTH, CELL_KEY2_MIN, CELL_KEY2_MAX, 10, false, false, true, false);
 	}
-	System.out.println(AI03);
+	return AI03;
 }
 
-public static void getAI04() {
+public static Weapon getAI04() {
 	{
 		AI04 = new Weapon("Shop Key", SHOP_KEY_DEFENSE, SHOP_KEY_HEALTH, SHOP_KEY_MIN, SHOP_KEY_MAX, 0, false, true, true, false);
 	}
-	System.out.println(AI04);
+	return AI04;
 }
 
-public static void getAI05() {
+public static Weapon getAI05() {
 	{
 		AI05 = new Weapon("Crown of Wings", WINGS_DEFENSE, WINGS_HEALTH, WINGS_MIN, WINGS_MAX, 11, true, true, true, true);
 	}
-	System.out.println(AI05);
+	return AI05;
 }
 
-public static void getAI06() {	
+public static Weapon getAI06() {	
 		{
 			AI06 = new Weapon("Gilded Sword", GILDED_SWORD_DEFENSE, GILDED_SWORD_HEALTH ,GILDED_SWORD_MIN, GILDED_SWORD_MAX, 12, true, true, true, true);
 		}
-		System.out.println(AI06);
+		return AI06;
 }
 
-public static void getAI07() {
+public static Weapon getAI07() {
 	{
 		AI07 = new Weapon("Gilded Plate", GILDED_PLATE_DEFENSE, GILDED_PLATE_HEALTH, GILDED_PLATE_MIN, GILDED_PLATE_MAX, 11, true, true, true, true);
 	}
-	System.out.println(AI07);
+	return AI07;
 }
 
-public static void getAI08() {
+public static Weapon getAI08() {
 	{
 		AI08 = new Weapon("Gilded Helm", GILDED_HELM_DEFENSE, GILDED_HELM_HEALTH, GILDED_HELM_MIN, GILDED_HELM_MAX, 10, true, true, true, true);
 	}
-	System.out.println(AI08);
+	return AI08;
 }
 }

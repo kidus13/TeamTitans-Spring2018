@@ -80,7 +80,6 @@ public class Player {
 								if (choice.equalsIgnoreCase("yes")) {
 									for(int i = 0; i<inv.size(); i++){
 									if(inv.get(i)==null)
-									inv.add(Weapon.getEI05());
 									}
 									System.out.println(inv + "\n");
 							}
