@@ -11,9 +11,30 @@ import java.util.Scanner;
  */
 public class RoomWriter {
 
+	
+	//commands
+	private Scanner commands;
+
+	public void openCommands() {
+		try {
+			commands = new Scanner(new File("commands.txt"));
+		} catch (Exception e) {
+			System.out.println("file 1 not found");
+		}
+	}
+
+	public void readCommands() {
+		while (commands.hasNextLine()) {
+			String _commands = commands.nextLine();
+			System.out.println(_commands);
+		}
+	}
+
+	public void closeCommands() {
+		commands.close();
+	}
+	
 	//private Scanner room1;
-
-
  private Scanner Room1;
 
 	public void openRoom1() {

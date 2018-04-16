@@ -14,23 +14,33 @@ public class Player {
  
 		Scanner input = new Scanner(System.in);
 		boolean inRoom = false;
+		int room = 0;
+
 
 		// Add inventory to array
 		List<Weapon> inv = new ArrayList<Weapon>();
 		Scanner inputItem = new Scanner(System.in);
 
-		System.out.println("Hello user please enter in the room you would like to enter");
+		System.out.println("Hello user type please enter 'north' to continue");
+		System.out.println("To view game commands please press h at anytime");
 		String userInput = input.nextLine();
-		int room = 0;
 
-		while (true) {
+		if(userInput.equalsIgnoreCase("h")){
+			r.openCommands();
+			r.readCommands();
+			r.closeCommands();
+			
+		}
+		if (userInput.equalsIgnoreCase("north")) {
+			room++;
+		}
+		if (userInput.equalsIgnoreCase("south")) {
+			room--;
+		}
+		
 
-			if (userInput.contains("north")) {
-				room++;
-			}
-			if (userInput.contains("south")) {
-				room--;
-			}
+	while (true) {
+
 
 			// room1
 			if (room == 1) {

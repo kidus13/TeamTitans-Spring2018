@@ -1,0 +1,11 @@
+Game Commands
+
+"h" - command menu
+"north" - up
+"south" - down
+"east" - left
+"west" - right
+"b" - battle
+"e" - equip
+"uni" - unequip
+"a" - add to inventory
