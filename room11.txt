@@ -2,3 +2,7 @@ SarCo Room - Room 11:
 “This room has a very dark aura and foul stench and it is
  full of sarcophagus. it covered in spider webs and crawling 
  ants. the stench of the deads in the sarcophagus “
+ 
+ ================================
+ Guard Monster “CenOrc l1” - Monster 4
+This monster is the guard of the sarcophagus room. 

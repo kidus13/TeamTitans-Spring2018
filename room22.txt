@@ -4,3 +4,8 @@ Fire Cavern 5 - Room 22:
  the room. ““As your eyes begin to adjust you see lava hot
   springs shooting up everywhere and a huge 
 object in the back of the room that looks to be sleeping”
+
+===================================
+Ultimate HellFire Beast - Monster 9
+“The heat that comes off his body is enough to melt anything
+above ground so he must be kept within his own realm.”

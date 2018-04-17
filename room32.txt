@@ -3,3 +3,9 @@ American Eagle Room - Room 32:
  of the next room, which has the Shopkeep held hostage
  behind bars. This boss is a big, muscular eagle knight 
  who looks angry and ready to strike.”
+ 
+ ==============================
+ Veteran Eagle - 
+ “Armed and dangerous, this retiree from combat now stands 
+ guard of the dungeon from intruders. Hasn’t failed in combat
+ yet, and definitely won’t go down without a fight.”

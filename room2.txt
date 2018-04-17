@@ -1,4 +1,12 @@
 Guardian's Station - Room 2:
-“Only slightly larger than the previous room, there is a sleeping guard sitting in a chair in the far corner.  You can try to sneak by, or start a fight.  Fighting would cause a lot of noise though”
-Fighting in this room wakes up the guard in ER03, who will try to fight the player.
+“Only slightly larger than the previous room, there is a 
+sleeping guard sitting in a chair in the far corner.  You
+ can try to sneak by, or start a fight.  Fighting would cause
+a lot of noise though” Fighting in this room wakes up the 
+guard in ER03, who will try to fight the player.
 Attacking the sleeping guard give the player a free hit.
+=========================================
+Guard - Monster 1:
+A regular Guard, he seems to be taking a nap.  
+Perhaps I can sneak by
+Receives +50% damage if attacked while asleep

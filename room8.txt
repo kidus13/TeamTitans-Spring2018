@@ -3,3 +3,11 @@ Large Chamber - Room 8:
  that would have lead out. There are stairs leading up, with a mist
   falling down and floating towards one of the collapsed halls.  
 There is also a large Earthen Golem blocking the stairway.”
+
+====================================
+Earth Golem - Monster 3
+Large and durable, this golem is quite fast, and won’t let
+ you go to the next floor. However, it doesn’t seem to be 
+ trying to kill you. It only has a 25% chance of doing damage
+ even without water. After splashing with water, you can simply
+run past the golem, as it has slowed down

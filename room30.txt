@@ -5,3 +5,10 @@ Tornado Alley - Room 30:
   stare at you as you enter, but they seem unfazed by the 
  wind. They are enticed by one of your potions.” 
 “Heavy armor will help with these strong winds.”
+
+================================
+Bat Squire - Monster 
+“Mammalian trainees of the air guard who specialize in
+operations in the dark or at night. 
+They are strong at resisting wind currents.
+They have a keen fascination with exotic potions.”
