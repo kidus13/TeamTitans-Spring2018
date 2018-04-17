@@ -43,12 +43,11 @@ public class Battle {
 			String choice = inputItem.nextLine();
 			
 				if (choice.equalsIgnoreCase("yes")) {
-					for(int i = 0; i < inv.size(); i++){
-					//if(inv.get(i)==null)
-					inv.add(Weapon.getEI05());
-					inv.add(Weapon.getEI06());
+					inv.add(Weapon.getEI01());
+					inv.add(Weapon.getEI02());
+					for(int i = 0; i<inv.size(); i++){
+						System.out.println(inv.get(i)+"\n");
 					}
-					System.out.println(inv + "\n");
 			} else {
 				System.out.println("bye");
 			}

@@ -6,13 +6,14 @@ import java.util.Scanner;
 public class Player {
 
 	public static void main(String[] args) {
-
+		Test  t = new Test();
 		RoomWriter r = new RoomWriter();
 		Character p = new Character("", 0, 0);
 		Monster m = new Monster("", 0, 0);
 		Weapon w = new Weapon("", 0, 0, 0, 0, 0, false, false, false, false);
 		Battle b = new Battle();
- 
+		Character c = new Character("", 0, 0);
+
 		Scanner input = new Scanner(System.in);
 		boolean inRoom = false;
 		boolean leaving = false;
@@ -70,7 +71,7 @@ public class Player {
 					room = 3;
 				}
 			}
-			if (room == 2) {
+			if (room == 2 &&leaving == false) {
 				// userInput = input.nextLine();
 				System.out.println("You are now in room 2");
 				System.out.println("Would you like to search room? yes or no ");
@@ -88,8 +89,8 @@ public class Player {
 						leaving = true;
 						}
 					if (userInput.contains("yes")) {
-						m.getEM01();
-
+						//m.getEM01();
+						
 						System.out.println("The guard has a few weapons you might need");
 						System.out.println("Would you like to see what he has? yes or no");
 						userInput = input.nextLine();
@@ -109,19 +110,21 @@ public class Player {
 								leaving = true;
 								}
 							if (userInput.contains("fight")) {
-								//b.battleMonster(m.getWM04()); // Still need to figure this out 
-								m.getWM04();
-								System.out.println("You won your battle!");
-								System.out.println("You can now collect items dropped by the monster");
-								System.out.println("Would you like to add items to your inventory? yes or no");
-								userInput = inputItem.nextLine();
-								if (userInput.equalsIgnoreCase("yes")) {
-											inv.add(Weapon.getEI01());
-											inv.add(Weapon.getEI02());
-											for(int i = 0; i<inv.size(); i++){
-												System.out.println(inv.get(i)+"\n");
-								//	System.out.println(Arrays.toString(inv.toArray()));
-											}
+								b.enemyAppears();
+								while (c.getPlayerHP() > 0 || (m.getMonsterHP() > 0)) {
+
+									System.out.println("Choose:\n1. To Attack \n2. To Flee");
+									String choice = input.next();
+									leaving = true;
+									if (choice.equals("1")) {
+										b.attack();
+										
+									} else {
+										b.run();
+									}
+									
+
+									break;		
 								}
 							}
 						}
