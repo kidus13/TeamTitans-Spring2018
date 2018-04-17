@@ -81,7 +81,7 @@ public class Player {
 							System.out.println("Would you like to fight or flee monster?");
 							userInput = input.nextLine();
 							if (userInput.contains("fight")) {
-								b.battleMonster(m.getWM04()); // Still need to figure this out 
+								//b.battleMonster(m.getWM04()); // Still need to figure this out 
 								m.getWM04();
 								System.out.println("You won your battle!");
 								System.out.println("You can now collect items dropped by the monster");
