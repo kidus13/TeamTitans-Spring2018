@@ -1,0 +1,4 @@
+You are in the hallwayof level 1
+Here you can directly enter a room between 1-8
+However some of these rooms require a key to enter.
+Conitnue with normal navigation commands to proceed linearaly.

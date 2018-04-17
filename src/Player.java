@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -14,6 +15,7 @@ public class Player {
  
 		Scanner input = new Scanner(System.in);
 		boolean inRoom = false;
+		boolean leaving = false;
 		int room = 0;
 
 
@@ -41,7 +43,12 @@ public class Player {
 
 	while (true) {
 
-
+		if (userInput.equalsIgnoreCase("north")) {
+			room++;
+		}
+		if (userInput.equalsIgnoreCase("south")) {
+			room--;
+		}
 			// room1
 			if (room == 1) {
 				r.openRoom1();
@@ -52,9 +59,17 @@ public class Player {
 					room = 2;
 
 				}
-
 			}
+			
+			
 			// room2
+			if (room == 2 && leaving == true) {
+				System.out.println("You are in room 2");
+				userInput = input.nextLine();
+				if (userInput.contains("north")) {
+					room = 3;
+				}
+			}
 			if (room == 2) {
 				// userInput = input.nextLine();
 				System.out.println("You are now in room 2");
@@ -68,38 +83,57 @@ public class Player {
 					System.out.println("There is a monster lurking in this room");
 					System.out.println("Would you like to examine? yes or no");
 					userInput = input.nextLine();
+					if (userInput.equalsIgnoreCase("no")) {
+						System.out.println("Be careful a monster could pop out of a corner");
+						leaving = true;
+						}
 					if (userInput.contains("yes")) {
 						m.getEM01();
 
 						System.out.println("The guard has a few weapons you might need");
 						System.out.println("Would you like to see what he has? yes or no");
 						userInput = input.nextLine();
+						if (userInput.equalsIgnoreCase("no")) {
+							System.out.println("Be careful a monster could pop out of a corner");
+							leaving = true;
+							}
 						if (userInput.contains("yes")) {
-							w.getEI01();
-							w.getEI02();
+							System.out.println(w.getEI01());
+							System.out.println(w.getEI02());
 							System.out.println("You have to battle the monster and defeat him to get the items");
 							System.out.println("Would you like to fight or flee monster?");
 							userInput = input.nextLine();
+							
+							if (userInput.equalsIgnoreCase("flee")) {
+								System.out.println("Be careful a monster could pop out of a corner");
+								leaving = true;
+								}
 							if (userInput.contains("fight")) {
 								//b.battleMonster(m.getWM04()); // Still need to figure this out 
 								m.getWM04();
 								System.out.println("You won your battle!");
 								System.out.println("You can now collect items dropped by the monster");
 								System.out.println("Would you like to add items to your inventory? yes or no");
-								String choice = inputItem.nextLine();
-								if (choice.equalsIgnoreCase("yes")) {
-									for(int i = 0; i<inv.size(); i++){
-									if(inv.get(i)==null)
-									inv.add(Weapon.getEI05());
-									}
-									System.out.println(inv + "\n");
+								userInput = inputItem.nextLine();
+								if (userInput.equalsIgnoreCase("yes")) {
+											inv.add(Weapon.getEI01());
+											inv.add(Weapon.getEI02());
+											for(int i = 0; i<inv.size(); i++){
+												System.out.println(inv.get(i)+"\n");
+								//	System.out.println(Arrays.toString(inv.toArray()));
+											}
+								}
 							}
 						}
-
-					} else if (userInput.contains("no")) {
-						System.out.println("Be careful a monster could pop out of a corner");
 					}
+						
+						} else if (userInput.equalsIgnoreCase("no")) {
+							System.out.println("Be careful a monster could pop out of a corner");
+							leaving = true;
+							//userInput = input.nextLine();
 
+						}
+			}
 					
 
 				// room3
@@ -283,9 +317,9 @@ public class Player {
 					r.closeRoom16();
 					userInput = input.nextLine();
 				}
+				}
 			}
-		}
 	}
-}
-}
-}
+	
+
+
