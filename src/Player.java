@@ -68,6 +68,7 @@ public class Player {
 				System.out.println("You are in room 2");
 				userInput = input.nextLine();
 				if (userInput.contains("north")) {
+					leaving= false;
 					room = 3;
 				}
 			}
@@ -146,13 +147,81 @@ public class Player {
 			//Item dropped from the guard - Guard’s Armor - EI01 & Guard’s Sword - EI02 Torture Room Key - EI03
 			//No puzzles
 			
-				if (room == 3) {
+			if (room == 3 && leaving == true) {
+				System.out.println("You are in room 3");
+				userInput = input.nextLine();
+				if (userInput.contains("north")) {
+					room = 4;
+				}
+			}
+			if (room == 3 &&leaving == false) {
+				// userInput = input.nextLine();
+				System.out.println("You are now in room 3");
+				System.out.println("Would you like to search the room? yes or no ");
+				userInput = input.nextLine();
+				if (userInput.contains("yes")) {
 					r.openRoom3();
 					r.readRoom3();
 					r.closeRoom3();
+					System.out.println("");
+					System.out.println("There is a monster lurking in this room");
+					System.out.println("Would you like to examine? yes or no");
 					userInput = input.nextLine();
+					if (userInput.equalsIgnoreCase("no")) {
+						System.out.println("Be careful a monster could pop out of a corner");
+						leaving = true;
+						}
+					if (userInput.contains("yes")) {
+						//m.getEM01();
+						
+						System.out.println("The guard has a few weapons you might need");
+						System.out.println("Would you like to see what he has? yes or no");
+						userInput = input.nextLine();
+						if (userInput.equalsIgnoreCase("no")) {
+							System.out.println("Be careful a monster could pop out of a corner");
+							leaving = true;
+							}
+						if (userInput.contains("yes")) {
+							System.out.println(w.getEI01());
+							System.out.println(w.getEI02());
+							System.out.println("You have to battle the monster and defeat him to get the items");
+							System.out.println("Would you like to fight or flee the monster?");
+							userInput = input.nextLine();
+							
+							if (userInput.equalsIgnoreCase("flee")) {
+								System.out.println("Be careful a monster could pop out of a corner");
+								leaving = true;
+								}
+							if (userInput.contains("fight")) {
+								b.enemyAppears();
+								while (c.getPlayerHP() > 0 || (m.getMonsterHP() > 0)) {
 
-				}
+									System.out.println("Choose:\n1. To Attack \n2. To Equip weapon & attack \n3. To Flee");
+									String choice = input.next();
+									leaving = true;
+									if (choice.equals("1")) {
+										b.attack();
+										
+									} else if(choice.equals("2")){
+										b.weaponAttack();
+								}else {
+										b.run();
+									}
+									
+
+									break;		
+								}
+							}
+						}
+					}
+						
+						} else if (userInput.equalsIgnoreCase("no")) {
+							System.out.println("Be careful a monster could pop out of a corner");
+							leaving = true;
+							//userInput = input.nextLine();
+
+						}
+			}
 				
 				// room4
 				// Monster in the room EM02 ( in the description of the room) but not in the table. *** Maybe we shouldn't add
