@@ -11,20 +11,29 @@ public class Battle {
 	Scanner inputItem = new Scanner(System.in);
 
 	private int monsterHP;
-	private int playerHP = 1000;
+	private int playerHP = 100;
 
+	public int getPlayerHP() {
+		return playerHP;
+	}
+
+	public void setPlayerHP(int playerHP) {
+		this.playerHP = playerHP;
+	}
+	
+	
 	public void monsterAppearsEM01() {
 		Monster monster = m.getEM01();
 		System.out.println("A " + monster.getName() + " has appeared with " + monster.getMonsterHP() + " health.");
 	}
 
-	
-	//For Earth Room 1 only
+	// For Earth Room 1 only
 	public void attackEM01() {
 		int damageTaken = (int) (Math.random() * m.getMonsterAP());
 		int damageDealt = (int) (Math.random() * c.getPlayerAttackPoints() + w.getAI01().getDamage());
 		monsterHP -= m.getMonsterHP() - damageDealt;
 		playerHP -= damageTaken;
+		setPlayerHP(playerHP);
 		System.out.println("You strike for " + damageDealt);
 		System.out.println("You have been hit for " + damageTaken);
 		System.out.println("You have " + playerHP + " hp left.\n The monster has " + monsterHP + " hp left.");
@@ -51,16 +60,17 @@ public class Battle {
 	}
 	
 	
-	
-	
+
 	public void weaponAttackEM01() {
+		playerHP = getPlayerHP();
 		Monster monster = m.getEM01();
 		String choice;
 		int wChoice = 0;
 		int damageTaken = (int) (Math.random() * (m.getMonsterAP()));
 		int damageDealt = (int) (Math.random() * c.getPlayerAttackPoints() + w.getAI01().getDamage());
 		playerHP -= damageTaken;
-
+		setPlayerHP(playerHP);
+		
 		System.out.println("What weapon do you want ");
 		for (int i = 0; i < inv.size(); i++) {
 			System.out.println("Enter " + i + " to equip " + inv.get(i) + "\n");
@@ -101,6 +111,7 @@ public class Battle {
 			}
 		}
 	}
+
 	public void runEM01() {
 		System.out.println("Only losers run from battle");
 	}
@@ -112,13 +123,15 @@ public class Battle {
 	}
 
 	public void weaponAttackEM02() {
+		playerHP = getPlayerHP();
 		Monster monster = m.getEM02();
 		String choice;
 		int wChoice = 0;
 		int damageTaken = (int) (Math.random() * (m.getMonsterAP()));
 		int damageDealt = (int) (Math.random() * c.getPlayerAttackPoints() + w.getAI01().getDamage());
 		playerHP -= damageTaken;
-
+		setPlayerHP(playerHP);
+		
 		System.out.println("What weapon do you want ");
 		for (int i = 0; i < inv.size(); i++) {
 			System.out.println("Enter " + i + " to equip " + inv.get(i) + "\n");
@@ -163,7 +176,7 @@ public class Battle {
 
 		System.out.println("Only losers run from battle");
 	}
-	
+
 	// Battle with EM03
 	public void monsterAppearsEM03() {
 		Monster monster = m.getEM03();
@@ -171,13 +184,15 @@ public class Battle {
 	}
 
 	public void weaponAttackEM03() {
+		playerHP = getPlayerHP();
 		Monster monster = m.getEM03();
 		String choice;
 		int wChoice = 0;
 		int damageTaken = (int) (Math.random() * (m.getMonsterAP()));
 		int damageDealt = (int) (Math.random() * c.getPlayerAttackPoints() + w.getEI06().getDamage());
 		playerHP -= damageTaken;
-
+		setPlayerHP(playerHP);
+		
 		System.out.println("What weapon do you want ");
 		for (int i = 0; i < inv.size(); i++) {
 			System.out.println("Enter " + i + " to equip " + inv.get(i) + "\n");
@@ -222,21 +237,217 @@ public class Battle {
 
 		System.out.println("Only losers run from battle");
 	}
-	
+
 	// Battle with WM01
-		public void monsterAppearsWM01() {
-			Monster monster = m.getWM01();
+	public void monsterAppearsWM01() {
+		Monster monster = m.getWM01();
+		System.out.println("A " + monster.getName() + " has appeared with " + monster.getMonsterHP() + " health.");
+	}
+
+	public void weaponAttackWM01() {
+		playerHP = getPlayerHP();
+		Monster monster = m.getWM01();
+		Weapon weaponAvail = w.getWI04();
+		String choice;
+		int wChoice = 0;
+		int damageTaken = (int) (Math.random() * (monster.getMonsterAP()));
+		int damageDealt = (int) (Math.random() * c.getPlayerAttackPoints() + weaponAvail.getDamage());
+		playerHP -= damageTaken;
+		setPlayerHP(playerHP);
+		
+
+		System.out.println("What weapon do you want ");
+		for (int i = 0; i < inv.size(); i++) {
+			System.out.println("Enter " + i + " to equip " + inv.get(i) + "\n");
+		}
+		choice = inputItem.nextLine();
+		int weapon = Integer.parseInt(choice);
+
+		Weapon attackWeapon = inv.get(weapon);
+		System.out.println("You have chosen " + attackWeapon);
+		System.out.println("Enter 'fight' to attack");
+		choice = inputItem.nextLine();
+
+		if (choice.equalsIgnoreCase("fight")) {
+
+			monsterHP -= m.getMonsterHP() - attackWeapon.getDamage();
+
+			System.out.println("You strike for " + attackWeapon.getDamage());
+			System.out.println("You have been hit for " + damageTaken);
+			System.out.println("You have " + playerHP + " hp left.\n The monster has " + monsterHP + " hp left.");
+		}
+		if (playerHP < 0) {
+			System.out.println("You died.");
+			System.exit(15);
+		}
+		if (monsterHP < 0) {
+			System.out.println("You killed the monster!");
+			System.out.println("Would you like to collect items?");
+			choice = inputItem.nextLine();
+
+			if (choice.equalsIgnoreCase("yes")) {
+				inv.add(weaponAvail);
+				for (int i = 0; i < inv.size(); i++) {
+					System.out.println(inv.get(i) + "\n");
+				}
+			} else {
+				System.out.println("bye");
+			}
+		}
+	}
+
+	public void runWM01() {
+
+		System.out.println("Only losers run from battle");
+	}
+
+	// Battle with WM02
+	public void monsterAppearsWM02() {
+		Monster monster = m.getWM02();
+		System.out.println("A " + monster.getName() + " has appeared with " + monster.getMonsterHP() + " health.");
+	}
+
+	public void weaponAttackWM02() {
+		Monster monster = m.getWM02();
+		Weapon weaponAvail = w.getWI03();
+		String choice;
+		int wChoice = 0;
+		int damageTaken = (int) (Math.random() * (monster.getMonsterAP()));
+		int damageDealt = (int) (Math.random() * c.getPlayerAttackPoints() + weaponAvail.getDamage());
+		playerHP -= damageTaken;
+
+		System.out.println("What weapon do you want ");
+		for (int i = 0; i < inv.size(); i++) {
+			System.out.println("Enter " + i + " to equip " + inv.get(i) + "\n");
+		}
+		choice = inputItem.nextLine();
+		int weapon = Integer.parseInt(choice);
+
+		Weapon attackWeapon = inv.get(weapon);
+		System.out.println("You have chosen " + attackWeapon);
+		System.out.println("Enter 'fight' to attack");
+		choice = inputItem.nextLine();
+
+		if (choice.equalsIgnoreCase("fight")) {
+
+			monsterHP -= m.getMonsterHP() - attackWeapon.getDamage();
+
+			System.out.println("You strike for " + attackWeapon.getDamage());
+			System.out.println("You have been hit for " + damageTaken);
+			System.out.println("You have " + playerHP + " hp left.\n The monster has " + monsterHP + " hp left.");
+		}
+		if (playerHP < 0) {
+			System.out.println("You died.");
+			System.exit(15);
+		}
+		if (monsterHP < 0) {
+			System.out.println("You killed the monster!");
+			System.out.println("Would you like to collect items?");
+			choice = inputItem.nextLine();
+
+			if (choice.equalsIgnoreCase("yes")) {
+				inv.add(weaponAvail);
+				for (int i = 0; i < inv.size(); i++) {
+					System.out.println(inv.get(i) + "\n");
+				}
+			} else {
+				System.out.println("bye");
+			}
+		}
+	}
+
+	public void runWM02() {
+
+		System.out.println("Only losers run from battle");
+	}
+
+	// Battle with WM03
+	public void monsterAppearsWM03() {
+		Monster monster = m.getWM03();
+		System.out.println("A " + monster.getName() + " has appeared with " + monster.getMonsterHP() + " health.");
+	}
+
+	// check for implementation of if condition
+	public void weaponAttackWM03() {
+		Monster monster = m.getWM03();
+		Weapon weaponAvail = null;
+		String choice;
+		int wChoice = 0;
+		int damageTaken = (int) (Math.random() * (monster.getMonsterAP()));
+		int damageDealt = (int) (Math.random() * c.getPlayerAttackPoints() + weaponAvail.getDamage());
+		playerHP -= damageTaken;
+
+		System.out.println("What weapon do you want ");
+		for (int i = 0; i < inv.size(); i++) {
+			System.out.println("Enter " + i + " to equip " + inv.get(i));
+			System.out.println("HINT: You need to grab 'Actinolite' to kill the Witch");
+		}
+		choice = inputItem.nextLine();
+		int weapon = Integer.parseInt(choice);
+
+		Weapon attackWeapon = inv.get(weapon);
+		System.out.println("You have chosen " + attackWeapon);
+
+		System.out.println("Enter 'fight' to attack");
+		choice = inputItem.nextLine();
+		if (choice.equalsIgnoreCase("fight")) {
+
+			// condition if player chooses something other that actonite*
+			if (attackWeapon != Weapon.getWI03()) {
+				monsterHP -= monster.getMonsterHP();
+				System.out.println("You have " + playerHP + " hp left.\n The monster has " + monsterHP + " hp left.");
+				// System.out.println("Looks like you didn't do any damage. Would you like to
+				// choose a different weapon?");
+			}
+
+			else
+				monsterHP -= monster.getMonsterHP() - attackWeapon.getDamage();
+
+			System.out.println("You strike for " + attackWeapon.getDamage());
+			System.out.println("You have been hit for " + damageTaken);
+			System.out.println("You have " + playerHP + " hp left.\n The monster has " + monsterHP + " hp left.");
+		}
+		if (playerHP < 0) {
+			System.out.println("You died.");
+			System.exit(15);
+		}
+		if (monsterHP < 0) {
+			System.out.println("You killed the monster!");
+			System.out.println("Would you like to collect items?");
+			choice = inputItem.nextLine();
+
+			if (choice.equalsIgnoreCase("yes")) {
+				inv.add(weaponAvail);
+				for (int i = 0; i < inv.size(); i++) {
+					System.out.println(inv.get(i) + "\n");
+				}
+			} else {
+				System.out.println("bye");
+			}
+		}
+	}
+
+	public void runWM03() {
+
+		System.out.println("Only losers run from battle");
+	}
+	
+	// Battle with WM04
+		public void monsterAppearsWM04() {
+			Monster monster = m.getWM02();
 			System.out.println("A " + monster.getName() + " has appeared with " + monster.getMonsterHP() + " health.");
 		}
 
-		public void weaponAttackWM01() {
-			Monster monster = m.getWM01();
-			Weapon weaponAvail = w.getWI04();
+		public void weaponAttackWM04() {
+			getPlayerHP();
+			Monster monster = m.getWM02();
+			Weapon weaponAvail = w.getWI01();
 			String choice;
 			int wChoice = 0;
 			int damageTaken = (int) (Math.random() * (monster.getMonsterAP()));
 			int damageDealt = (int) (Math.random() * c.getPlayerAttackPoints() + weaponAvail.getDamage());
 			playerHP -= damageTaken;
+			setPlayerHP(playerHP);
 
 			System.out.println("What weapon do you want ");
 			for (int i = 0; i < inv.size(); i++) {
@@ -278,25 +489,27 @@ public class Battle {
 			}
 		}
 
-		public void runWM01() {
+		public void runWM04() {
 
 			System.out.println("Only losers run from battle");
 		}
-	
-		// Battle with WM02
-				public void monsterAppearsWM02() {
-					Monster monster = m.getWM02();
+
+		// Battle with FM01
+				public void monsterAppearsFM01() {
+					Monster monster = m.getFM01();
 					System.out.println("A " + monster.getName() + " has appeared with " + monster.getMonsterHP() + " health.");
 				}
 
-				public void weaponAttackWM02() {
-					Monster monster = m.getWM02();
-					Weapon weaponAvail = w.getWI03();
+				public void weaponAttackFM01() {
+					getPlayerHP();
+					Monster monster = m.getFM01();
+					Weapon weaponAvail = w.getFI01();
 					String choice;
 					int wChoice = 0;
 					int damageTaken = (int) (Math.random() * (monster.getMonsterAP()));
 					int damageDealt = (int) (Math.random() * c.getPlayerAttackPoints() + weaponAvail.getDamage());
 					playerHP -= damageTaken;
+					setPlayerHP(playerHP);
 
 					System.out.println("What weapon do you want ");
 					for (int i = 0; i < inv.size(); i++) {
@@ -338,54 +551,43 @@ public class Battle {
 					}
 				}
 
-				public void runWM02() {
+				public void runFM02() {
 
 					System.out.println("Only losers run from battle");
 				}
-				
-				
-				// Battle with WM03
-				public void monsterAppearsWM03() {
-					Monster monster = m.getWM03();
+
+				// Battle with FM01
+				public void monsterAppearsFM02() {
+					Monster monster = m.getFM02();
 					System.out.println("A " + monster.getName() + " has appeared with " + monster.getMonsterHP() + " health.");
 				}
 
-				
-				//check for implementation of if condition 
-				public void weaponAttackWM03() {
-					Monster monster = m.getWM03();
-					Weapon weaponAvail = null;
+				public void weaponAttackFM02() {
+					getPlayerHP();
+					Monster monster = m.getFM02();
+					Weapon weaponAvail = w.getFI02();
 					String choice;
 					int wChoice = 0;
 					int damageTaken = (int) (Math.random() * (monster.getMonsterAP()));
 					int damageDealt = (int) (Math.random() * c.getPlayerAttackPoints() + weaponAvail.getDamage());
 					playerHP -= damageTaken;
+					setPlayerHP(playerHP);
 
 					System.out.println("What weapon do you want ");
 					for (int i = 0; i < inv.size(); i++) {
-						System.out.println("Enter " + i + " to equip " + inv.get(i));
-						System.out.println("HINT: You need to grab 'Actinolite' to kill the Witch");
+						System.out.println("Enter " + i + " to equip " + inv.get(i) + "\n");
 					}
 					choice = inputItem.nextLine();
 					int weapon = Integer.parseInt(choice);
 
 					Weapon attackWeapon = inv.get(weapon);
 					System.out.println("You have chosen " + attackWeapon);
-					
 					System.out.println("Enter 'fight' to attack");
 					choice = inputItem.nextLine();
+
 					if (choice.equalsIgnoreCase("fight")) {
-					
-					// condition if player chooses something other that actonite*
-					if (attackWeapon != Weapon.getWI03())
-					{
-					monsterHP -= monster.getMonsterHP();
-					System.out.println("You have " + playerHP + " hp left.\n The monster has " + monsterHP + " hp left.");
-					//System.out.println("Looks like you didn't do any damage. Would you like to choose a different weapon?");
-					}
-					
-					else
-						monsterHP -= monster.getMonsterHP() - attackWeapon.getDamage();
+
+						monsterHP -= m.getMonsterHP() - attackWeapon.getDamage();
 
 						System.out.println("You strike for " + attackWeapon.getDamage());
 						System.out.println("You have been hit for " + damageTaken);
@@ -411,8 +613,10 @@ public class Battle {
 					}
 				}
 
-				public void runWM03() {
+				public void runFM01() {
 
 					System.out.println("Only losers run from battle");
-				}			
+				}
+	
+	
 }
