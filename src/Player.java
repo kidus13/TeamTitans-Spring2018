@@ -8,6 +8,7 @@ public class Player {
 
 	public static void main(String[] args) {
 		Test t = new Test();
+		Puzzles puz = new Puzzles();
 		RoomWriter r = new RoomWriter();
 		Character p = new Character("", 0, 0);
 		Monster m = new Monster("", 0, 0);
@@ -278,15 +279,14 @@ public class Player {
 						}
 						if (userInput.contains("yes")) {
 							System.out.println(w.getEI04());
-							System.out.println("Would you like to add to inventory");
+							System.out.print("You must complete the puzzle to obtain the object");
+							System.out.println("Would you like to proceed?");
 							userInput = input.nextLine();
 							if (userInput.contains("yes")) {
-								b.inv.add(w.getEI04());
-								for(int i = 0; i<b.inv.size(); i++){
-									System.out.println(b.inv.get(i)+"\n");
-									leaving = true;
+								
+							puz.puzzleSol();
+							leaving = true;
 
-								}
 							}
 							
 					}
