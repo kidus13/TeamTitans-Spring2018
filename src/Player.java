@@ -22,7 +22,6 @@ public class Player {
 
 		// Add inventory to array
 		List<Weapon> inv = new ArrayList<Weapon>();
-		//inv.add(Weapon.getEI03());
 
 		Scanner inputItem = new Scanner(System.in);
 
@@ -44,6 +43,9 @@ public class Player {
 		}
 
 		while (true) {
+			
+			//inv.add(w.getEI03());
+
 
 
 			if (userInput.equalsIgnoreCase("north")) {
@@ -57,7 +59,7 @@ public class Player {
 				r.openRoom1();
 				r.readRoom1();
 				r.closeRoom1();
-				// userInput = input.nextLine();
+				 userInput = input.nextLine();
 				if (userInput.contains("north")) {
 					room = 2;
 
@@ -112,7 +114,7 @@ public class Player {
 								leaving = true;
 							}
 							if (userInput.contains("fight")) {
-								b.enemyAppears();
+								b.monsterAppearsEM01();
 								while (c.getPlayerHP() > 0 || (m.getMonsterHP() > 0)) {
 
 									System.out.println(
@@ -120,12 +122,12 @@ public class Player {
 									String choice = input.next();
 									leaving = true;
 									if (choice.equals("1")) {
-										b.attack();
+										b.attackEM01();
 
 									} else if (choice.equals("2")) {
 										b.weaponAttack();
 									} else {
-										b.run();
+										b.runEM01();
 									}
 
 									break;
@@ -193,7 +195,7 @@ public class Player {
 								leaving = true;
 							}
 							if (userInput.contains("fight")) {
-								b.enemyAppears();
+								b.monsterAppearsEM02();
 								while (c.getPlayerHP() > 0 || (m.getMonsterHP() > 0)) {
 
 									System.out.println(
@@ -201,12 +203,12 @@ public class Player {
 									String choice = input.next();
 									leaving = true;
 									if (choice.equals("1")) {
-										b.attack();
+										b.weaponAttackEM02();
 
 									} else if (choice.equals("2")) {
 										b.weaponAttack();
 									} else {
-										b.run();
+										b.runEM02();
 									}
 
 									break;
@@ -230,7 +232,16 @@ public class Player {
 			// Items in the room Water Bucket - EI04
 			// Puzzle EP01 -- not actually a puzzle but instead just letting the
 			// player know the will need EI04 in room 8.
+			 if (userInput.contains("5")) {
+					room = 5;
+					leaving = false;
 
+				}
+				if (userInput.contains("7")) {
+					room = 7;
+					leaving = false;
+
+				}
 			if (room == 4 && leaving == true) {
 				System.out.println("You are in room 4");
 				System.out.println("This room has access to 5 & 7");
@@ -243,12 +254,7 @@ public class Player {
 			}
 			if (room == 4 && leaving == false) {
 				// userInput = input.nextLine();
-			   if (userInput.contains("5")) {
-					room = 5;
-				}
-				if (userInput.contains("7")) {
-					room = 7;
-				}
+			  
 				System.out.println("You are in room 4");
 				System.out.println("This room has access to 5 & 7");
 				System.out.println("Would you like to search the room? yes or no ");
@@ -275,9 +281,9 @@ public class Player {
 							System.out.println("Would you like to add to inventory");
 							userInput = input.nextLine();
 							if (userInput.contains("yes")) {
-								inv.add(w.getEI04());
-								for(int i = 0; i<inv.size(); i++){
-									System.out.println(inv.get(i)+"\n");
+								b.inv.add(w.getEI04());
+								for(int i = 0; i<b.inv.size(); i++){
+									System.out.println(b.inv.get(i)+"\n");
 									leaving = true;
 
 								}
@@ -300,11 +306,12 @@ public class Player {
 			// Items dropped by monster Cell Key - EI05
 			// No puzzles
 
-			if (room == 5 && !inv.contains(Weapon.getEI03())) {
+			if (room == 5 && leaving == false && b.inv.size()<1) {
 			System.out.println("Sorry you need the torture room key.");
+			userInput = input.nextLine();
 			}
 
-			if (room == 5 && leaving == true && inv.contains(Weapon.getEI03())) {
+			if (room == 5 && leaving == true && b.inv.size()>0) {
 				System.out.println("You are in room 5");
 				userInput = input.nextLine();
 				if (userInput.contains("north")) {
@@ -312,7 +319,8 @@ public class Player {
 					room = 6;
 				}
 			}
-			if (room == 5 && leaving == false && inv.contains(Weapon.getEI03())) {
+			if (room == 5 && leaving == false && b.inv.size()>0) {
+
 				// userInput = input.nextLine();
 				System.out.println("You are now in room 5");
 				System.out.println("Would you like to search the room? yes or no ");
@@ -349,7 +357,7 @@ public class Player {
 								leaving = true;
 							}
 							if (userInput.contains("fight")) {
-								b.enemyAppears();
+								b.monsterAppearsEM02();
 								while (c.getPlayerHP() > 0 || (m.getMonsterHP() > 0)) {
 
 									System.out.println(
@@ -357,12 +365,12 @@ public class Player {
 									String choice = input.next();
 									leaving = true;
 									if (choice.equals("1")) {
-										b.attack();
+										b.weaponAttackEM02();
 
 									} else if (choice.equals("2")) {
 										b.weaponAttack();
 									} else {
-										b.run();
+										b.runEM02();
 									}
 
 									break;
@@ -383,7 +391,6 @@ public class Player {
 			// No monster
 			// Items in the room Health Potion - EI07
 			// No puzzle
-			leaving =false;
 			if (room == 6 && leaving == true) {
 				System.out.println("You are in room 6");
 				System.out.println("This room is a dead end so you can only move south ");
@@ -432,9 +439,9 @@ public class Player {
 							System.out.println("Would you like to add to inventory");
 							userInput = input.nextLine();
 							if (userInput.contains("yes")) {
-								inv.add(w.getEI07());
-								for(int i = 0; i<inv.size(); i++){
-									System.out.println(inv.get(i)+"\n");
+								b.inv.add(w.getEI07());
+								for(int i = 0; i<b.inv.size(); i++){
+									System.out.println(b.inv.get(i)+"\n");
 									leaving = true;
 
 								}
@@ -453,13 +460,30 @@ public class Player {
 			// No monster
 			// No puzzle
 			// No item
-			if (room == 7) {
-				r.openRoom7();
-				r.readRoom7();
-				r.closeRoom7();
+			if (room == 7 && leaving == false) {
+				// userInput = input.nextLine();
+			   
+				System.out.println("You are in room 7");
+				System.out.println("This room is a dead end so you can only move south ");
+				System.out.println("Would you like to search the room? yes or no ");
+
 				userInput = input.nextLine();
-				if (userInput.contains("south")) {
-					room = 5;
+				if (userInput.contains("yes")) {
+					r.openRoom7();
+					r.readRoom7();
+					r.closeRoom7();
+						
+					userInput = input.nextLine();
+					if (userInput.equalsIgnoreCase("no")) {
+						System.out.println("Be careful a monster could pop out of a corner");
+						leaving = true;
+					}
+
+				} else if (userInput.equalsIgnoreCase("no")) {
+					System.out.println("Be careful a monster could pop out of a corner");
+					leaving = true;
+					// userInput = input.nextLine();
+
 				}
 			}
 			// room8

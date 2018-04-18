@@ -37,17 +37,29 @@ public class Battle {
 			System.out.println("Would you like to collect items?");
 			String choice = inputItem.nextLine();
 
+
 			if (choice.equalsIgnoreCase("yes")) {
 				inv.add(Weapon.getEI01());
 				inv.add(Weapon.getEI02());
 				for (int i = 0; i < inv.size(); i++) {
 					System.out.println(inv.get(i));
 				}
+
+			
+				if (choice.equalsIgnoreCase("yes")) {
+					inv.add(Weapon.getEI01());
+					inv.add(Weapon.getEI02());
+
+					
+					for(int i = 0; i<inv.size(); i++){
+						System.out.println(inv.get(i)+"\n");
+					}
+
 			} else {
 				System.out.println("bye");
 			}
-		}
-	}
+		
+	
 
 	public void weaponAttackEM01() {
 		Monster monster = m.getEM01();
