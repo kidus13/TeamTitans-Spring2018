@@ -4,9 +4,11 @@ Raven Room - Room 34:
  it across the walls toward the ceiling.”
  
  ===========================
- King Flightgrand IV is in this room: 
- “His leadership, charisma, helped him win the respect of his
-  people until his friendliness put his kingdom in jeopardy 
-  when he was taken advantage of by neighboring societies. 
-  Rumor has it that you were to blame, therefore you are his 
-  worst enemy.”
+The Monster that resides here is...
+
+King Flightgrand IV is in this room: 
+“His leadership, charisma, helped him win the respect of his
+people until his friendliness put his kingdom in jeopardy 
+when he was taken advantage of by neighboring societies. 
+Rumor has it that you were to blame, therefore you are his 
+worst enemy.”

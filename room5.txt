@@ -1,12 +1,14 @@
 Torture Room - Room 5:
 “A small room filled with large torture equipment.  
 The jailer is banging on the bars of the only cell in
- the room, laughing at the cell’s unfortunate inhabitant”
+the room, laughing at the cell’s unfortunate inhabitant”
 After defeating the jailer - “A small room filled with large
- torture equipment, with only one cell”
+torture equipment, with only one cell”
 
  ====================================
- Jailer - Monster 2:
+ The Monster that resides here is...
+
+Jailer - Monster 2:
 Uh-oh! There is a torture happy individual, the Jailer, he
 seems perfectly content with trying to rip you apart with his
 bare hands.

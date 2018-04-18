@@ -5,6 +5,8 @@ Craft Room Store - Room 13:
 dead animal hidden in the cramped artifacts ”
 
 ================================
-shopkeeper “ArGhai” - Monster 7
+The Monster that resides here is...
+
+Shopkeeper “ArGhai” - Monster 7
 “This monster is the shop owner and keeper.
 It decides what would be sold and what items could be traded”

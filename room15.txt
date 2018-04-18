@@ -3,7 +3,9 @@ Hell Path Room - Room 15:
 the monster sits and keep watch of any intruders” 
 
 =================================
-Guard Monster “CenOrc l2” - Monster 5
+The Monster that resides here is...
+
+The Guard Monster “CenOrc l2” - Monster 5
 This monster is the guard of the cave where the waterfall exist. 
 This monster is known to feed of the players strength, every time
 a player attacks it and don’t kill it gets stronger

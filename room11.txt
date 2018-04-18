@@ -4,5 +4,7 @@ SarCo Room - Room 11:
  ants. the stench of the deads in the sarcophagus “
  
  ================================
+ The Monster that resides here is...
+ 
  Guard Monster “CenOrc l1” - Monster 4
 This monster is the guard of the sarcophagus room. 

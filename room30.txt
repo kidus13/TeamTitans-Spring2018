@@ -7,6 +7,8 @@ Tornado Alley - Room 30:
 “Heavy armor will help with these strong winds.”
 
 ================================
+The Monster that resides here is...
+
 Bat Squire - Monster 
 “Mammalian trainees of the air guard who specialize in
 operations in the dark or at night. 

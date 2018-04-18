@@ -5,7 +5,9 @@ The guard is sleeping as well if the player didn’t fight
 the guard in ER02...
 
 ===============================
-Guard:
+The Monster that resides here is...
+
+A Guard:
 If Awake - A regular Guard, he seems to have just woken up
 If Asleep - A regular Guard, he seems to be taking a nap.  
 Perhaps I can sneak by

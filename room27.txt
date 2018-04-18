@@ -1,10 +1,12 @@
 Fire Cavern 10 - Room 27: 
 ” This room feels like the heart of the volcano
- the heat is so intense it changes the gravity elements
-  and you can barely move” “This room also has multiple 
- locked molten doors which are all engraved and say equip
+the heat is so intense it changes the gravity elements
+and you can barely move” “This room also has multiple 
+locked molten doors which are all engraved and say equip
 what is hot to enter.
 
 =============================
+The Monster that resides here is...
+
 Lava Queen Fluffy - Monster 10
 “All that is said about her is --Your life is her breath”

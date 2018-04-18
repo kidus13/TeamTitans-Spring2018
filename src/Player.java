@@ -74,7 +74,7 @@ public class Player {
 			if (room == 2 &&leaving == false) {
 				// userInput = input.nextLine();
 				System.out.println("You are now in room 2");
-				System.out.println("Would you like to search room? yes or no ");
+				System.out.println("Would you like to search the room? yes or no ");
 				userInput = input.nextLine();
 				if (userInput.contains("yes")) {
 					r.openRoom2();
@@ -102,7 +102,7 @@ public class Player {
 							System.out.println(w.getEI01());
 							System.out.println(w.getEI02());
 							System.out.println("You have to battle the monster and defeat him to get the items");
-							System.out.println("Would you like to fight or flee monster?");
+							System.out.println("Would you like to fight or flee the monster?");
 							userInput = input.nextLine();
 							
 							if (userInput.equalsIgnoreCase("flee")) {

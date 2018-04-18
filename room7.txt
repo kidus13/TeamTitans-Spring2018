@@ -1,4 +1,4 @@
 Equipment Room - Room 7:
 “While this room is obviously for storing equipment, 
 it is currently empty of everything other than the tool racks,
- which are useless to you.”
+which are useless to you.”

@@ -1,7 +1,7 @@
 Long Hallway - Room 4:
 “A long hallway with several buckets catching water falling
- through the ceiling.  There are three doors, one to the barracks,
-  one normal door, and one locked door that you can hear some noise
-   coming from.” After defeating the jailer - “A long hallway
-    with a door on each end.  The hallway is filled with buckets 
-    catching drips of water falling through the ceiling.”
+through the ceiling.  There are three doors, one to the barracks,
+one normal door, and one locked door that you can hear some noise
+coming from.” After defeating the jailer - “A long hallway
+with a door on each end.  The hallway is filled with buckets 
+catching drips of water falling through the ceiling.”

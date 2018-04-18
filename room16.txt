@@ -1,10 +1,12 @@
 Witch of the Falls Room - Room 16:
 “this is final boss room, it is a gloomy and very dark pitch
- room, it only lights up when Actinolite is presence, it omits
-  a very foul smell and its filled with skulls and deadly potions”
+room, it only lights up when Actinolite is presence, it omits
+a very foul smell and its filled with skulls and deadly potions”
   
   ==================================
-  Witch of the falls “LyvFx” - Monster 6
+ The Monster that resides here is...
+ 
+Witch of the falls “LyvFx” - Monster 6
 This monster is the witch that reside in the waterfall cave guarded
- by CenOrcs. this monster is allergic to "asbestos" which can be found
+by CenOrcs. this monster is allergic to "asbestos" which can be found
 in a stone called "Actinolite"
