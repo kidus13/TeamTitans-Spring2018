@@ -151,6 +151,7 @@ public class Player {
 				System.out.println("You are in room 3");
 				userInput = input.nextLine();
 				if (userInput.contains("north")) {
+					leaving= false;
 					room = 4;
 				}
 			}
