@@ -153,7 +153,8 @@ public class Player {
 				}
 				
 				// room4
-				// Monster in the room EM02 ( in the description of the room) but not in the table.
+				// Monster in the room EM02 ( in the description of the room) but not in the table. *** Maybe we shouldn't add
+				// him here because its the next room and it drops a key in the next room. 
 				// Items in the room Water Bucket - EI04
 				// Puzzle EP01 -- not actually a puzzle but instead just letting the player know the will need EI04 in room 8.
 				if (room == 4) {
