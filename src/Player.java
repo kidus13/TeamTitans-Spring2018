@@ -139,7 +139,11 @@ public class Player {
 			}
 					
 
-				// room3
+			// room3
+			//Monster in the room EM01(Guard) 
+			//Item dropped from the guard - Guard’s Armor - EI01 & Guard’s Sword - EI02 Torture Room Key - EI03
+			//No puzzles
+			
 				if (room == 3) {
 					r.openRoom3();
 					r.readRoom3();
@@ -147,7 +151,11 @@ public class Player {
 					userInput = input.nextLine();
 
 				}
+				
 				// room4
+				// Monster in the room EM02 ( in the description of the room) but not in the table.
+				// Items in the room Water Bucket - EI04
+				// Puzzle EP01 -- not actually a puzzle but instead just letting the player know the will need EI04 in room 8.
 				if (room == 4) {
 					r.openRoom4();
 					r.readRoom4();
@@ -166,6 +174,10 @@ public class Player {
 				}
 
 				// room5
+				// ***** You need this key  dropped in room 3 in order to enter Torture Room Key - EI03
+				// Monster in the room EM02 (duplicate monster from previous room)
+				// Items dropped by monster Cell Key - EI05
+				// No puzzles
 				if (room == 5) {
 					r.openRoom5();
 					r.readRoom5();
@@ -174,6 +186,9 @@ public class Player {
 
 				}
 				// room6
+				// No monster
+				// Items in the room Health Potion - EI07
+				// No puzzle
 				if (room == 6) {
 					r.openRoom6();
 					r.readRoom6();
@@ -188,6 +203,9 @@ public class Player {
 					}
 				}
 				// room7
+				// No monster
+				// No puzzle
+				// No item
 				if (room == 7) {
 					r.openRoom7();
 					r.readRoom7();
@@ -198,6 +216,9 @@ public class Player {
 					}
 				}
 				// room8
+				// Monster in the room EM03
+				// Items dropped by monster Earthen Helmet - EI06.
+				// Puzzle EP01 -- puzzle states you need Water Bucket - EI04 to defeat the monster.
 				if (room == 8) {
 					r.openRoom8();
 					r.readRoom8();
@@ -220,6 +241,9 @@ public class Player {
 				}
 
 				// room9
+				// No monster
+				// No item
+				// No puzzle
 				if (room == 9) {
 					r.openRoom9();
 					r.readRoom9();
@@ -228,6 +252,9 @@ public class Player {
 				}
 
 				// room10
+				// No monster
+				// Puzzle WP01 -- must solve puzzle correctly in order to move to room 11
+				// Items WI04 & WI05
 				if (room == 10) {
 					r.openRoom10();
 					r.readRoom10();
@@ -246,6 +273,9 @@ public class Player {
 				}
 
 				// room11
+				// Monster WM01
+				// Items none
+				// Puzzle none
 				if (room == 11) {
 					r.openRoom11();
 					r.readRoom11();
@@ -261,6 +291,9 @@ public class Player {
 				}
 
 				// room12
+				// Monster none
+				// Items none
+				// Puzzle none
 				if (room == 12) {
 					r.openRoom12();
 					r.readRoom12();
@@ -279,6 +312,10 @@ public class Player {
 				}
 
 				// room13
+				// Monster WM04
+				// Items WI01
+				// Puzzle none
+				
 				if (room == 13) {
 					r.openRoom13();
 					r.readRoom13();
@@ -294,6 +331,9 @@ public class Player {
 				}
 
 				// room14
+				// Monster none
+				// Items WI02 and WI06
+				// Puzzle WP02 -- you must solve this puzzle in order to get the items above
 				if (room == 14) {
 					r.openRoom14();
 					r.readRoom14();
@@ -305,7 +345,10 @@ public class Player {
 					}
 				}
 
-				// room15
+				// room15 
+				// Monster WM02
+				// Items WI03 
+				// Puzzle none
 				if (room == 15) {
 					r.openRoom15();
 					r.readRoom15();
@@ -314,10 +357,120 @@ public class Player {
 				}
 
 				// room16
+				// Monster WM03 -- you need to have WI03  in order to defeat the monster.
+				// Puzzle none
+				// Item none
 				if (room == 16) {
 					r.openRoom16();
 					r.readRoom16();
 					r.closeRoom16();
+					userInput = input.nextLine();
+				}
+				
+				// room17
+				if (room == 17) {
+					r.openRoom17();
+					r.readRoom17();
+					r.closeRoom17();
+					userInput = input.nextLine();
+				}
+
+				// room18
+				if (room == 18) {
+					r.openRoom18();
+					r.readRoom18();
+					r.closeRoom18();
+					userInput = input.nextLine();
+				}
+				// room19
+				if (room == 19) {
+					r.openRoom19();
+					r.readRoom19();
+					r.closeRoom19();
+					userInput = input.nextLine();
+				}
+
+				// room20
+				if (room == 20) {
+					r.openRoom20();
+					r.readRoom20();
+					r.closeRoom20();
+					userInput = input.nextLine();
+				}
+				// room21
+				if (room == 21) {
+					r.openRoom21();
+					r.readRoom21();
+					r.closeRoom21();
+					userInput = input.nextLine();
+				}
+
+				// room22
+				if (room == 22) {
+					r.openRoom22();
+					r.readRoom22();
+					r.closeRoom22();
+					userInput = input.nextLine();
+				}
+				// room23
+				if (room == 23) {
+					r.openRoom23();
+					r.readRoom23();
+					r.closeRoom23();
+					userInput = input.nextLine();
+				}
+
+				// room24
+				if (room == 24) {
+					r.openRoom24();
+					r.readRoom24();
+					r.closeRoom24();
+					userInput = input.nextLine();
+				}
+				
+				// room25
+				if (room == 25) {
+					r.openRoom25();
+					r.readRoom25();
+					r.closeRoom25();
+					userInput = input.nextLine();
+				}
+
+				// room26
+				if (room == 26) {
+					r.openRoom26();
+					r.readRoom26();
+					r.closeRoom26();
+					userInput = input.nextLine();
+				}
+				// room27
+				if (room == 27) {
+					r.openRoom27();
+					r.readRoom27();
+					r.closeRoom27();
+					userInput = input.nextLine();
+				}
+
+				// room28
+				if (room == 28) {
+					r.openRoom28();
+					r.readRoom28();
+					r.closeRoom28();
+					userInput = input.nextLine();
+				}
+				// room29
+				if (room == 29) {
+					r.openRoom29();
+					r.readRoom29();
+					r.closeRoom29();
+					userInput = input.nextLine();
+				}
+
+				// room30
+				if (room == 30) {
+					r.openRoom30();
+					r.readRoom30();
+					r.closeRoom30();
 					userInput = input.nextLine();
 				}
 				}
