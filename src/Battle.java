@@ -45,6 +45,9 @@ public class Battle {
 				if (choice.equalsIgnoreCase("yes")) {
 					inv.add(Weapon.getEI01());
 					inv.add(Weapon.getEI02());
+					inv.add(Weapon.getEI03());
+
+					
 					for(int i = 0; i<inv.size(); i++){
 						System.out.println(inv.get(i)+"\n");
 					}
@@ -61,8 +64,6 @@ public class Battle {
 		int damageDealt = (int) (Math.random() * c.getPlayerAttackPoints() + w.getAI01().getDamage());
 		playerHP -= damageTaken;
 
-		inv.add(Weapon.getEI01());
-		inv.add(Weapon.getEI02());
 		System.out.println("What weapon do you want ");
 		for( int i = 0; i<inv.size(); i++){
 			System.out.println("Enter " + i + " to equip " +inv.get(i)+"\n");
