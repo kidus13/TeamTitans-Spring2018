@@ -45,7 +45,6 @@ public class Battle {
 				if (choice.equalsIgnoreCase("yes")) {
 					inv.add(Weapon.getEI01());
 					inv.add(Weapon.getEI02());
-					inv.add(Weapon.getEI03());
 
 					
 					for(int i = 0; i<inv.size(); i++){
