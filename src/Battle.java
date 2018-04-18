@@ -54,9 +54,61 @@ public class Battle {
 		}
 	}
 	
-	public void run() {
+	public void weaponAttack() {
+		String choice ;
+		int wChoice = 0;
+		int damageTaken = (int) (Math.random() * m.getMonsterAP());
+		int damageDealt = (int) (Math.random() * c.getPlayerAttackPoints() + w.getAI01().getDamage());
+		playerHP -= damageTaken;
 
-		System.out.println("bitch");
+		inv.add(Weapon.getEI01());
+		inv.add(Weapon.getEI02());
+		System.out.println("What weapon do you want ");
+		for( int i = 0; i<inv.size(); i++){
+			System.out.println("Enter " + i + " to equip " +inv.get(i)+"\n");
+		}
+		choice = inputItem.nextLine();
+		int weapon = Integer.parseInt(choice);
+
+
+
+			Weapon attackWeapon = inv.get(weapon);
+			System.out.println("You have chosen "+attackWeapon);
+			System.out.println("Enter 'fight' to attack");
+			choice = inputItem.nextLine();
+
+
+			if (choice.equalsIgnoreCase("fight")) {
+
+			monsterHP -= m.getMonsterHP() - attackWeapon.getDamage();
+
+				System.out.println("You strike for " + attackWeapon.getDamage());
+				System.out.println("You have been hit for " + damageTaken);
+				System.out.println("You have " + playerHP + " hp left.\n The monster has " + monsterHP + " hp left.");
+			}
+			if (playerHP < 0) {
+				System.out.println("You died.");
+				System.exit(15);
+			}
+			if (monsterHP < 0) {
+				System.out.println("You killed the monster!");
+				System.out.println("Would you like to collect items?");
+				choice = inputItem.nextLine();
+
+				if (choice.equalsIgnoreCase("yes")) {
+					inv.add(Weapon.getEI01());
+					inv.add(Weapon.getEI02());
+					for(int i = 0; i<inv.size(); i++){
+						System.out.println(inv.get(i)+"\n");
+					}
+				} else {
+					System.out.println("bye");
+				}
+			}
 	}
+		public void run() {
 
-}
+			System.out.println("bitch");
+		}
+
+	}

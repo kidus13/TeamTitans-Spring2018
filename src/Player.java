@@ -113,13 +113,15 @@ public class Player {
 								b.enemyAppears();
 								while (c.getPlayerHP() > 0 || (m.getMonsterHP() > 0)) {
 
-									System.out.println("Choose:\n1. To Attack \n2. To Flee");
+									System.out.println("Choose:\n1. To Attack \n2. To Equip weapon & attack \n3. To Flee");
 									String choice = input.next();
 									leaving = true;
 									if (choice.equals("1")) {
 										b.attack();
 										
-									} else {
+									} else if(choice.equals("2")){
+										b.weaponAttack();
+								}else {
 										b.run();
 									}
 									
