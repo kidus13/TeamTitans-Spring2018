@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -125,7 +126,7 @@ public class Player {
 										b.attackEM01();
 
 									} else if (choice.equals("2")) {
-										b.weaponAttack();
+										b.weaponAttackEM01();
 									} else {
 										b.runEM01();
 									}
@@ -146,7 +147,7 @@ public class Player {
 
 			// room3
 			// Monster in the room EM01(Guard)
-			// Item dropped from the guard - Guardâ€™s Armor - EI01 & Guardâ€™s
+			// Item dropped from the guard - Guard’s Armor - EI01 & Guard’s
 			// Sword - EI02 Torture Room Key - EI03
 			// No puzzles
 
@@ -206,7 +207,7 @@ public class Player {
 										b.weaponAttackEM02();
 
 									} else if (choice.equals("2")) {
-										b.weaponAttack();
+										b.weaponAttackEM02();
 									} else {
 										b.runEM02();
 									}
@@ -368,11 +369,11 @@ public class Player {
 										b.weaponAttackEM02();
 
 									} else if (choice.equals("2")) {
-										b.weaponAttack();
+										b.weaponAttackEM02();
 									} else {
 										b.runEM02();
 									}
-
+																						
 									break;
 								}
 							}
