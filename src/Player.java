@@ -16,7 +16,6 @@ public class Player {
 		Character c = new Character("", 0, 0);
 
 		Scanner input = new Scanner(System.in);
-		boolean inRoom = false;
 		boolean leaving = false;
 		int room = 0;
 		
