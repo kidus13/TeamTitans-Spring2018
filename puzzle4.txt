@@ -1,0 +1,8 @@
+FP03
+Shop Puzzle 
+This Puzzle grants the player access to choices
+FR09
+What has four legs, but can’t walk?
+A table.
+What do you sit at to eat?
+             
