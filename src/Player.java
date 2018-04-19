@@ -147,7 +147,7 @@ public class Player {
 
 			// room3
 			// Monster in the room EM01(Guard)
-			// Item dropped from the guard - Guard�s Armor - EI01 & Guard�s
+			// Item dropped from the guard - Guard�s Armor - EI01 & Guard�s
 			// Sword - EI02 Torture Room Key - EI03
 			// No puzzles
 
@@ -743,27 +743,543 @@ public class Player {
 			}
 
 			// room28
-			if (room == 28) {
-				r.openRoom28();
-				r.readRoom28();
-				r.closeRoom28();
+			// Items IA06“Gilded Sword” IA07 “Gilded Plate”IA08 “Gilded Helm”
+
+			if (room == 28 && leaving == true) {
+				System.out.println("You are in room 28");
 				userInput = input.nextLine();
+				if (userInput.contains("north")) {
+					leaving = false;
+					room = 29;
+				}
+			}
+			if (room == 28 && leaving == false) {
+				// userInput = input.nextLine();
+				System.out.println("You are now in room 28");
+				System.out.println("Would you like to search the room? yes or no ");
+				userInput = input.nextLine();
+				if (userInput.contains("yes")) {
+					r.openRoom28();
+					r.readRoom28();
+					r.closeRoom28();
+					System.out.println("");
+					System.out.println("This room has a chest.");
+					System.out.println("Would you like to search ? yes or no");		
+					userInput = input.nextLine();
+					if (userInput.equalsIgnoreCase("no")) {
+						System.out.println("Be careful a monster could pop out of a corner");
+						leaving = true;
+					}
+					
+						if (userInput.equalsIgnoreCase("no")) {
+							System.out.println("Be careful a monster could pop out of a corner");
+							leaving = true;
+						}
+						if (userInput.contains("yes")) {
+							System.out.println(w.getAI06());
+							System.out.println(w.getAI07());
+							System.out.println(w.getAI08());
+							
+							System.out.println("Would you like to add to inventory");
+							userInput = input.nextLine();
+							if (userInput.contains("yes")) {
+								b.inv.add(w.getAI06());
+								b.inv.add(w.getAI07());
+								b.inv.add(w.getAI08());
+								for(int i = 0; i<b.inv.size(); i++){
+									System.out.println(b.inv.get(i)+"\n");
+									leaving = true;
+
+								}
+							}
+							
+					}
+
+				} else if (userInput.equalsIgnoreCase("no")) {
+					System.out.println("Be careful a monster could pop out of a corner");
+					leaving = true;
+					// userInput = input.nextLine();
+
+				}
 			}
 			// room29
-			if (room == 29) {
-				r.openRoom29();
-				r.readRoom29();
-				r.closeRoom29();
+			// Breeze Key IA01
+			//AM01
+
+			if (room == 29 && leaving == true) {
+				System.out.println("You are in room 29");
 				userInput = input.nextLine();
+				if (userInput.contains("north")) {
+					leaving = false;
+					room = 30;
+				}
+			}
+			if (room == 29 && leaving == false) {
+				// userInput = input.nextLine();
+				System.out.println("You are now in room 29");
+				System.out.println("Would you like to search the room? yes or no ");
+				userInput = input.nextLine();
+				if (userInput.contains("yes")) {
+					r.openRoom29();
+					r.readRoom29();
+					r.closeRoom29();
+					System.out.println("");
+					System.out.println("Would you like to examine the monster? yes or no");
+					userInput = input.nextLine();
+					if (userInput.equalsIgnoreCase("no")) {
+						System.out.println("Be careful a monster could pop out of a corner");
+						leaving = true;
+					}
+					if (userInput.contains("yes")) {
+
+						System.out.println("The guard has a few weapons you might need");
+						System.out.println("Would you like to see what he has? yes or no");
+						userInput = input.nextLine();
+						if (userInput.equalsIgnoreCase("no")) {
+							System.out.println("Be careful a monster could pop out of a corner");
+							leaving = true;
+						}
+						if (userInput.contains("yes")) {
+
+							System.out.println(w.getAI01());
+							System.out.println("You have to battle the monster and defeat him to get the items");
+							System.out.println("Would you like to fight or flee the monster?");
+							userInput = input.nextLine();
+
+							if (userInput.equalsIgnoreCase("flee")) {
+								System.out.println("Be careful a monster could pop out of a corner");
+								leaving = true;
+							}
+							if (userInput.contains("fight")) {
+								b.monsterAppearsAM01();
+								while (c.getPlayerHP() > 0 || (m.getMonsterHP() > 0)) {
+
+									System.out.println(
+											"Choose:\n1. To Attack \n2. To Equip weapon & attack \n3. To Flee");
+									String choice = input.next();
+									leaving = true;
+									if (choice.equals("1")) {
+										b.weaponAttackAM01();
+
+									} else if (choice.equals("2")) {
+										b.weaponAttackAM01();
+									} else {
+										b.runAM01();
+									}
+
+									break;
+								}
+							}
+						}
+					}
+
+				} else if (userInput.equalsIgnoreCase("no")) {
+					System.out.println("Be careful a monster could pop out of a corner");
+					leaving = true;
+					// userInput = input.nextLine();
+
+				}
 			}
 
 			// room30
-			if (room == 30) {
-				r.openRoom30();
-				r.readRoom30();
-				r.closeRoom30();
+			// Fancy Potion IA02
+			// PA01
+			// AM02 x2
+
+			if (room == 30 && leaving == true) {
+				System.out.println("You are in room 30");
 				userInput = input.nextLine();
+				if (userInput.contains("north")) {
+					leaving = false;
+					room = 31;
+				}
 			}
+			if (room == 30 && leaving == false) {
+				// userInput = input.nextLine();
+				System.out.println("You are now in room 30");
+				System.out.println("Would you like to search the room? yes or no ");
+				userInput = input.nextLine();
+				if (userInput.contains("yes")) {
+					r.openRoom30();
+					r.readRoom30();
+					r.closeRoom30();
+					System.out.println("");
+					System.out.println("Would you like to examine the monster? yes or no");
+					userInput = input.nextLine();
+					if (userInput.equalsIgnoreCase("no")) {
+						System.out.println("Be careful a monster could pop out of a corner");
+						leaving = true;
+					}
+					if (userInput.contains("yes")) {
+
+						System.out.println("The guard has a few weapons you might need");
+						System.out.println("Would you like to see what he has? yes or no");
+						userInput = input.nextLine();
+						if (userInput.equalsIgnoreCase("no")) {
+							System.out.println("Be careful a monster could pop out of a corner");
+							leaving = true;
+						}
+						if (userInput.contains("yes")) {
+
+							System.out.println(w.getAI02());
+							System.out.println("You have to battle the monster and defeat him to get the items");
+							System.out.println("Would you like to fight or flee the monster?");
+							userInput = input.nextLine();
+
+							if (userInput.equalsIgnoreCase("flee")) {
+								System.out.println("Be careful a monster could pop out of a corner");
+								leaving = true;
+							}
+							if (userInput.contains("fight")) {
+								b.monsterAppearsAM02();
+								while (c.getPlayerHP() > 0 || (m.getMonsterHP() > 0)) {
+
+									System.out.println(
+											"Choose:\n1. To Attack \n2. To Equip weapon & attack \n3. To Flee");
+									String choice = input.next();
+									leaving = true;
+									if (choice.equals("1")) {
+										b.weaponAttackAM02();
+
+									} else if (choice.equals("2")) {
+										b.weaponAttackAM02();
+									} else {
+										b.runAM02();
+									}
+
+									break;
+								}
+							}
+						}
+					}
+
+				} else if (userInput.equalsIgnoreCase("no")) {
+					System.out.println("Be careful a monster could pop out of a corner");
+					leaving = true;
+					// userInput = input.nextLine();
+
+				}
+			}		
+			
+			// room31
+			if (room == 31 && leaving == true) {
+				System.out.println("You are in room 31");
+				userInput = input.nextLine();
+				if (userInput.contains("north")) {
+					leaving = false;
+					room = 32;
+				}
+			}
+			if (room == 31 && leaving == false) {
+				// userInput = input.nextLine();
+				System.out.println("You are now in room 32");
+				System.out.println("Would you like to search the room? yes or no ");
+				userInput = input.nextLine();
+				if (userInput.contains("yes")) {
+					r.openRoom31();
+					r.readRoom31();
+					r.closeRoom31();
+					userInput = input.nextLine();
+					if (userInput.equalsIgnoreCase("no")) {
+						System.out.println("Be careful a monster could pop out of a corner");
+						leaving = true;
+					}
+
+				} else if (userInput.equalsIgnoreCase("no")) {
+					System.out.println("Be careful a monster could pop out of a corner");
+					leaving = true;
+					// userInput = input.nextLine();
+
+				}
+			}
+			// room32
+			if (room == 32 && leaving == false && b.inv.size()<1) {
+			System.out.println("Sorry you need the breeze key.");
+			userInput = input.nextLine();
+			}
+
+			if (room == 32 && leaving == true && b.inv.size()>0) {
+				System.out.println("You are in room 32");
+				userInput = input.nextLine();
+				if (userInput.contains("north")) {
+					leaving = false;
+					room = 33;
+				}
+			}
+			if (room == 32 && leaving == false && b.inv.size()>0) {
+
+
+				// userInput = input.nextLine();
+				System.out.println("You are now in room 32");
+				System.out.println("Would you like to search the room? yes or no ");
+				userInput = input.nextLine();
+				if (userInput.contains("yes")) {
+					r.openRoom32();
+					r.readRoom32();
+					r.closeRoom32();
+					System.out.println("");
+					System.out.println("Would you like to examine the monster? yes or no");
+					userInput = input.nextLine();
+					if (userInput.equalsIgnoreCase("no")) {
+						System.out.println("Be careful a monster could pop out of a corner");
+						leaving = true;
+					}
+					if (userInput.contains("yes")) {
+
+						System.out.println("The guard has a few weapons you might need");
+						System.out.println("Would you like to see what he has? yes or no");
+						userInput = input.nextLine();
+						if (userInput.equalsIgnoreCase("no")) {
+							System.out.println("Be careful a monster could pop out of a corner");
+							leaving = true;
+						}
+						if (userInput.contains("yes")) {
+
+							System.out.println(w.getAI03());
+							System.out.println("You have to battle the monster and defeat him to get the items");
+							System.out.println("Would you like to fight or flee the monster?");
+							userInput = input.nextLine();
+
+							if (userInput.equalsIgnoreCase("flee")) {
+								System.out.println("Be careful a monster could pop out of a corner");
+								leaving = true;
+							}
+							if (userInput.contains("fight")) {
+								b.monsterAppearsAM03();
+								while (c.getPlayerHP() > 0 || (m.getMonsterHP() > 0)) {
+
+									System.out.println(
+											"Choose:\n1. To Attack \n2. To Equip weapon & attack \n3. To Flee");
+									String choice = input.next();
+									leaving = true;
+									if (choice.equals("1")) {
+										b.weaponAttackAM03();
+
+									} else if (choice.equals("2")) {
+										b.weaponAttackAM03();
+									} else {
+										b.runAM03();
+									}
+																						
+									break;
+								}
+							}
+						}
+					}
+
+				} else if (userInput.equalsIgnoreCase("no")) {
+					System.out.println("Be careful a monster could pop out of a corner");
+					leaving = true;
+					// userInput = input.nextLine();
+
+				}
+			}
+			// room33
+			if (room == 33 && leaving == true) {
+				System.out.println("You are in room 33");
+				userInput = input.nextLine();
+				if (userInput.contains("north")) {
+					leaving = false;
+					room = 34;
+				}
+			}
+			if (room == 33 && leaving == false) {
+				// userInput = input.nextLine();
+				System.out.println("You are now in room 33");
+				System.out.println("Would you like to search the room? yes or no ");
+				userInput = input.nextLine();
+				if (userInput.contains("yes")) {
+					r.openRoom33();
+					r.readRoom33();
+					r.closeRoom33();
+					System.out.println("");
+					System.out.println("Would you like to examine the monster? yes or no");
+					userInput = input.nextLine();
+					if (userInput.equalsIgnoreCase("no")) {
+						System.out.println("Be careful a monster could pop out of a corner");
+						leaving = true;
+					}
+					if (userInput.contains("yes")) {
+
+						System.out.println("The guard has a few weapons you might need");
+						System.out.println("Would you like to see what he has? yes or no");
+						userInput = input.nextLine();
+						if (userInput.equalsIgnoreCase("no")) {
+							System.out.println("Be careful a monster could pop out of a corner");
+							leaving = true;
+						}
+						if (userInput.contains("yes")) {
+
+							System.out.println(w.getAI04());
+							System.out.println("You have to battle the monster and defeat him to get the items");
+							System.out.println("Would you like to fight or flee the monster?");
+							userInput = input.nextLine();
+
+							if (userInput.equalsIgnoreCase("flee")) {
+								System.out.println("Be careful a monster could pop out of a corner");
+								leaving = true;
+							}
+							if (userInput.contains("fight")) {
+								b.monsterAppearsAM04();
+								while (c.getPlayerHP() > 0 || (m.getMonsterHP() > 0)) {
+
+									System.out.println(
+											"Choose:\n1. To Attack \n2. To Equip weapon & attack \n3. To Flee");
+									String choice = input.next();
+									leaving = true;
+									if (choice.equals("1")) {
+										b.weaponAttackAM04();
+
+									} else if (choice.equals("2")) {
+										b.weaponAttackAM04();
+									} else {
+										b.runAM04();
+									}
+
+									break;
+								}
+							}
+						}
+					}
+
+				} else if (userInput.equalsIgnoreCase("no")) {
+					System.out.println("Be careful a monster could pop out of a corner");
+					leaving = true;
+					// userInput = input.nextLine();
+
+				}
+			}		
+			
+
+			// room34
+			if (room == 34 && leaving == true) {
+				System.out.println("You are in room 34");
+				userInput = input.nextLine();
+				if (userInput.contains("north")) {
+					leaving = false;
+					room = 35;
+				}
+			}
+			if (room == 34 && leaving == false) {
+				// userInput = input.nextLine();
+				System.out.println("You are now in room 2");
+				System.out.println("Would you like to search the room? yes or no ");
+				userInput = input.nextLine();
+				if (userInput.contains("yes")) {
+					r.openRoom34();
+					r.readRoom34();
+					r.closeRoom34();
+					System.out.println("");
+					System.out.println("This room has a few weapons you might need");
+					System.out.println("Would you like to search ? yes or no");		
+					userInput = input.nextLine();
+					if (userInput.equalsIgnoreCase("no")) {
+						System.out.println("Be careful a monster could pop out of a corner");
+						leaving = true;
+					}
+					
+						if (userInput.equalsIgnoreCase("no")) {
+							System.out.println("Be careful a monster could pop out of a corner");
+							leaving = true;
+						}
+						if (userInput.contains("yes")) {
+							System.out.println(w.getAI04());
+							System.out.println("Would you like to add to inventory");
+							userInput = input.nextLine();
+							if (userInput.contains("yes")) {
+								b.inv.add(w.getAI04());
+								for(int i = 0; i<b.inv.size(); i++){
+									System.out.println(b.inv.get(i)+"\n");
+									leaving = true;
+
+								}
+							}
+							
+					}
+
+				} else if (userInput.equalsIgnoreCase("no")) {
+					System.out.println("Be careful a monster could pop out of a corner");
+					leaving = true;
+					// userInput = input.nextLine();
+
+				}
+			}
+			// room35
+			if (room == 35 && leaving == true) {
+				System.out.println("You are in room 35");
+				userInput = input.nextLine();
+				if (userInput.contains("north")) {
+					leaving = false;
+					room = 36;
+				}
+			}
+			if (room == 35 && leaving == false) {
+				// userInput = input.nextLine();
+				System.out.println("You are now in room 35");
+				System.out.println("Would you like to search the room? yes or no ");
+				userInput = input.nextLine();
+				if (userInput.contains("yes")) {
+					r.openRoom35();
+					r.readRoom35();
+					r.closeRoom35();
+					System.out.println("");
+					System.out.println("Would you like to examine the monster? yes or no");
+					userInput = input.nextLine();
+					if (userInput.equalsIgnoreCase("no")) {
+						System.out.println("Be careful a monster could pop out of a corner");
+						leaving = true;
+					}
+					if (userInput.contains("yes")) {
+
+						System.out.println(" This is the final boss would you like to continue? yes or no");
+						userInput = input.nextLine();
+						if (userInput.equalsIgnoreCase("no")) {
+							System.out.println("Be careful a monster could pop out of a corner");
+							leaving = true;
+						}
+						if (userInput.contains("yes")) {
+
+							System.out.println("You have to battle the monster and defeat him in order to finish the game.");
+							System.out.println("Would you like to fight or flee the monster?");
+							userInput = input.nextLine();
+
+							if (userInput.equalsIgnoreCase("flee")) {
+								System.out.println("Be careful a monster could pop out of a corner");
+								leaving = true;
+							}
+							if (userInput.contains("fight")) {
+								b.monsterAppearsAM05();
+								while (c.getPlayerHP() > 0 || (m.getMonsterHP() > 0)) {
+
+									System.out.println(
+											"Choose:\n1. To Attack \n2. To Equip weapon & attack \n3. To Flee");
+									String choice = input.next();
+									leaving = true;
+									if (choice.equals("1")) {
+										b.weaponAttackAM05();
+
+									} else if (choice.equals("2")) {
+										b.weaponAttackAM05();
+									} else {
+										b.runAM05();
+									}
+
+									break;
+								}
+							}
+						}
+					}
+
+				} else if (userInput.equalsIgnoreCase("no")) {
+					System.out.println("Be careful a monster could pop out of a corner");
+					leaving = true;
+					// userInput = input.nextLine();
+
+				}
+			}
+			
+			System.out.println("You have completed the game.");
+
 		}
 	}
 }
