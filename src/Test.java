@@ -13,15 +13,15 @@ public class Test {
 
 		Scanner input = new Scanner(System.in);
 		
-		b.enemyAppears();
+		b.monsterAppearsEM01();
 		while (c.getPlayerHP() > 0 || (m.getMonsterHP() > 0)) {
 
 			System.out.println("Choose:\n1. To Attack \n2. To Flee");
 			String choice = input.next();
 			if (choice.equals("1")) {
-				b.attack();
+				b.attackEM01();
 			} else {
-				b.run();
+				b.runEM01();
 			}
 			break;
 		}
