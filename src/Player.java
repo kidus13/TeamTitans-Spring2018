@@ -666,6 +666,7 @@ public class Player {
 			}
 
 			// room20
+			//no items or monsters
 			if (room == 20) {
 				r.openRoom20();
 				r.readRoom20();
@@ -673,6 +674,8 @@ public class Player {
 				userInput = input.nextLine();
 			}
 			// room21
+			//puzzle pf01
+			//no monsters
 			if (room == 21) {
 				r.openRoom21();
 				r.readRoom21();
@@ -681,6 +684,10 @@ public class Player {
 			}
 
 			// room22
+			//monster hellfire beast - monster 9
+			//drops lava gauntlets - if02
+			//no puzzle
+			
 			if (room == 22) {
 				r.openRoom22();
 				r.readRoom22();
@@ -688,6 +695,7 @@ public class Player {
 				userInput = input.nextLine();
 			}
 			// room23
+			//no puzzle or monsters
 			if (room == 23) {
 				r.openRoom23();
 				r.readRoom23();
@@ -695,7 +703,8 @@ public class Player {
 				userInput = input.nextLine();
 			}
 
-			// room24
+			// room24 
+			//no puzzle or monsters
 			if (room == 24) {
 				r.openRoom24();
 				r.readRoom24();
@@ -704,6 +713,7 @@ public class Player {
 			}
 
 			// room25
+			//
 			if (room == 25) {
 				r.openRoom25();
 				r.readRoom25();
@@ -712,6 +722,9 @@ public class Player {
 			}
 
 			// room26
+			//Treasure Keeper Absolute Blue - Monster 11
+			//flame potion - if04 item
+			//puzzle PF03
 			if (room == 26) {
 				r.openRoom26();
 				r.readRoom26();
@@ -719,6 +732,9 @@ public class Player {
 				userInput = input.nextLine();
 			}
 			// room27
+			//Lava Queen Fluffy - Monster 10
+			//puzzle PF02
+			//IF03 flame key item
 			if (room == 27) {
 				r.openRoom27();
 				r.readRoom27();
