@@ -761,7 +761,7 @@ public class Player {
 				}
 			}
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
 			// room18
 			if (room == 18) {
 				r.openRoom18();
@@ -906,7 +906,7 @@ public class Player {
 							leaving = true;
 							}
 						}
-=======
+//=======
 			if (room == 12 && leaving == false) {
 				System.out.println("You are in room 12");
 				System.out.println("This room has access to rooms 11, 13, 14, and hallway1");
@@ -931,12 +931,12 @@ public class Player {
 							leaving = true;
 						}
 					}
->>>>>>> f3613cd29b1f355409b35acdde5b681024b49a76
+//>>>>>>> f3613cd29b1f355409b35acdde5b681024b49a76
 
 				} else if (userInput.equalsIgnoreCase("no")) {
 					System.out.println("Stop lollygagging and move on. ");
 					leaving = true;
-<<<<<<< HEAD
+//<<<<<<< HEAD
 					}
 			}
 			
@@ -1237,7 +1237,7 @@ public class Player {
 					leaving = true;
 					}
 			}
-=======
+
 				}
 			}
 
@@ -1249,7 +1249,7 @@ public class Player {
 			if (room == 13 && leaving == true) {
 				System.out.println("You are in room 13");
 				System.out.println("This room has access to rooms 10, 12, 15, and hallway2");
->>>>>>> f3613cd29b1f355409b35acdde5b681024b49a76
+//>>>>>>> f3613cd29b1f355409b35acdde5b681024b49a76
 
 				userInput = input.nextLine();
 				if (userInput.contains("north")) {
@@ -1260,15 +1260,15 @@ public class Player {
 					room = 10;
 					leaving = false;
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
 			// room28
 			
-=======
+//=======
 				}
 				if (userInput.contains("12")) {
 					room = 12;
 					leaving = false;
->>>>>>> f3613cd29b1f355409b35acdde5b681024b49a76
+//>>>>>>> f3613cd29b1f355409b35acdde5b681024b49a76
 
 				}
 				if (userInput.contains("15")) {
@@ -1717,9 +1717,9 @@ public class Player {
 			}
 		}
 	}
-<<<<<<< HEAD
+//<<<<<<< HEAD
 
 }}}
-=======
-}
->>>>>>> f3613cd29b1f355409b35acdde5b681024b49a76
+//=======
+
+//>>>>>>> f3613cd29b1f355409b35acdde5b681024b49a76
