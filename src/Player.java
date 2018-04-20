@@ -656,15 +656,83 @@ public class Player {
 				r.readRoom18();
 				r.closeRoom18();
 				userInput = input.nextLine();
+				if (userInput.contains("north")) {
+					System.out.println("Do you want to access room 19, or 22?");
+					userInput = input.nextLine();
+					if (userInput.contains("19")) {
+						room = 19;
+					}
+					if (userInput.contains("22")) {
+						room = 22;
+					}
+				}
 			}
+
 			// room19
-			if (room == 19) {
+			//monster 9 - ultimate hell fire beast FM01
+			//if01 molten lava sword
+			
+			/*if (room == 19) {
 				r.openRoom19();
 				r.readRoom19();
 				r.closeRoom19();
 				userInput = input.nextLine();
 			}
+			if (room == 19 && leaving == true) {
+				System.out.println("You are in room ");
+				System.out.println("This room has access to 1 & 3");
+				
+				userInput = input.nextLine();
+				if (userInput.contains("north")) {
+					leaving = false;
+					room = 1;
+				}
+			}
+			if (room == 19 && leaving == false) {
+				// userInput = input.nextLine();
+			  
+				System.out.println("You are in room 19");
+				System.out.println("This room has access to 1 & 3");
+				System.out.println("Would you like to search the room? yes or no ");
+				userInput = input.nextLine();
+				if (userInput.contains("yes")) {
+					r.openRoom19();
+					r.readRoom19();
+					r.closeRoom19();
+					System.out.println("");
+					System.out.println("This room has a few weapons you might need");
+					System.out.println("Would you like to search ? yes or no");		
+					userInput = input.nextLine();
+					if (userInput.equalsIgnoreCase("no")) {
+						System.out.println("Be careful a monster could pop out of a corner");
+						leaving = true;
+					}
+					
+						if (userInput.equalsIgnoreCase("no")) {
+							System.out.println("Be careful a monster could pop out of a corner");
+							leaving = true;
+						}
+						if (userInput.contains("yes")) {
+							System.out.println(w.getIF01());
+							//System.out.print("You must complete the puzzle to obtain the object");
+							//System.out.println("Would you like to proceed?");
+							userInput = input.nextLine();
+							if (userInput.contains("yes")) {
+								
+							puz.puzzleSol();
+							leaving = true;
+							System.out.println("okay keep it moving");
+							}
+							
+					}
 
+				} else if (userInput.equalsIgnoreCase("no")) {
+					System.out.println("Be careful a monster could pop out of a corner");
+					leaving = true;
+					// userInput = input.nextLine();
+
+				}
+			}*/
 			// room20
 			//no items or monsters
 			if (room == 20) {
@@ -673,16 +741,150 @@ public class Player {
 				r.closeRoom20();
 				userInput = input.nextLine();
 			}
+			if (room == 20 && leaving == true) {
+				System.out.println("You are in room 20");
+				System.out.println("This room has access to rooms 19, 21, 24");
+				
+				userInput = input.nextLine();
+				if (userInput.contains("north")) {
+					leaving = false;
+					room = 20;
+				}
+			 if (userInput.contains("19")) {
+					room = 19;
+					leaving = false;
+
+				}
+				if (userInput.contains("21")) {
+					room = 21;
+					leaving = false;
+
+				}
+				if (userInput.contains("24")) {
+					room = 24;
+					leaving = false;
+
+				}
+				/*if (userInput.contains("hallway1")) {					
+				System.out.println("entering hallway1");				
+				}*/
+			}
+			
+			if (room == 20 && leaving == false) {  
+				System.out.println("You are in room 20");
+				System.out.println("This room has access to rooms 19, 21, 24 and hallway1");
+				System.out.println("Would you like to search the room? \n Yes or No ");
+				userInput = input.nextLine();
+				if (userInput.contains("yes")) {
+					r.openRoom20();
+					r.readRoom20();
+					r.closeRoom20();
+					System.out.println("");
+					System.out.println("Would you like to search? \n Yes or No");		
+					userInput = input.nextLine();
+					if (userInput.equalsIgnoreCase("no")) {
+						System.out.println("Be careful you never know whats lurking");
+						leaving = true;
+					}
+					
+						if (userInput.contains("yes")) {
+							System.out.print("Nothing to see here. Proceed?");
+							userInput = input.nextLine();
+							if (userInput.contains("yes")) {
+							leaving = true;
+							}
+						}
+
+				} else if (userInput.equalsIgnoreCase("no")) {
+					System.out.println("Stop lollygagging and move on. ");
+					leaving = true;
+					}
+			}
+			
+			
+			
+			
 			// room21
 			//puzzle pf01
 			//no monsters
-			if (room == 21) {
-				r.openRoom21();
-				r.readRoom21();
-				r.closeRoom21();
-				userInput = input.nextLine();
-			}
-
+			//27 20 22 
+			if (userInput.contains("22")) {
+								room = 22;
+								leaving = false;
+				
+							}
+							if (userInput.contains("27")) {
+								room = 27;
+								leaving = false;
+				
+							}
+							if (room == 21 && leaving == true) {
+								System.out.println("You are in room 21");
+								System.out.println("This room has access to 22 & 27");
+				
+				 				userInput = input.nextLine();
+				 				if (userInput.contains("north")) {
+									System.out.println("Do you want to access room 22 or 27?");
+									leaving = false;
+									room = 22;
+								}
+							}
+							if (room == 21 && leaving == false) {
+								// userInput = input.nextLine();
+				
+								System.out.println("You are in room 21");
+								System.out.println("This room has access to 22 & 27");
+								System.out.println("Would you like to search the room? yes or no ");
+								userInput = input.nextLine();
+								if (userInput.contains("yes")) {
+									r.openRoom21();
+									r.readRoom21();
+									r.closeRoom21();
+									System.out.println("");
+								//	System.out.println("This room has a few weapons you might need");
+									System.out.println("Would you like to search ? yes or no");
+				 					userInput = input.nextLine();
+									if (userInput.contains("22")) {
+										room = 22;
+									if (userInput.equalsIgnoreCase("no")) {
+										System.out.println("Be careful a monster could pop out of a corner");
+										leaving = true;
+				 					}
+									if (userInput.contains("27")) {
+										room = 27;
+				
+									if (userInput.equalsIgnoreCase("no")) {
+										System.out.println("Be careful a monster could pop out of a corner");
+										leaving = true;
+									}
+									if (userInput.contains("yes")) {
+										//System.out.println(w.getEI04());
+										System.out.print("You must complete the puzzle.");
+										System.out.println("Would you like to proceed?");
+										userInput = input.nextLine();
+										if (userInput.contains("yes")) {
+											// need correct puzzle here
+											
+											puz.puzzleSol();
+											leaving = true;
+				
+										}
+				
+				 					}
+				
+								} else if (userInput.equalsIgnoreCase("no")) {
+									System.out.println("Be careful a monster could pop out of a corner");
+									leaving = true;
+									// userInput = input.nextLine();
+				
+				 				}
+				 			}
+				
+			
+			
+			
+			
+			
 			// room22
 			//monster hellfire beast - monster 9
 			//drops lava gauntlets - if02
@@ -703,6 +905,65 @@ public class Player {
 				userInput = input.nextLine();
 			}
 
+			if (room == 23 && leaving == true) {
+				System.out.println("You are in room 23");
+				System.out.println("This room has access to rooms 22, 25 and 27");
+				
+				userInput = input.nextLine();
+				if (userInput.contains("north")) {
+					leaving = false;
+					room = 22;
+				}
+			 if (userInput.contains("22")) {
+					room = 22;
+					leaving = false;
+
+				}
+				if (userInput.contains("25")) {
+					room = 25;
+					leaving = false;
+
+				}
+				if (userInput.contains("27")) {
+					room = 27;
+					leaving = false;
+
+				}
+				/*if (userInput.contains("hallway1")) {					
+				System.out.println("entering hallway1");				
+				}*/
+			}
+			
+			if (room == 23 && leaving == false) {  
+				System.out.println("You are in room 23");
+				System.out.println("This room has access to rooms 22, 25 and 27");
+				System.out.println("Would you like to search the room? \n Yes or No ");
+				userInput = input.nextLine();
+				if (userInput.contains("yes")) {
+					r.openRoom23();
+					r.readRoom23();
+					r.closeRoom23();
+					System.out.println("");
+					System.out.println("Would you like to search? \n Yes or No");		
+					userInput = input.nextLine();
+					if (userInput.equalsIgnoreCase("no")) {
+						System.out.println("Be careful you never know whats lurking");
+						leaving = true;
+					}
+					
+						if (userInput.contains("yes")) {
+							System.out.print("Nothing to see here. Proceed?");
+							userInput = input.nextLine();
+							if (userInput.contains("yes")) {
+							leaving = true;
+							}
+						}
+
+				} else if (userInput.equalsIgnoreCase("no")) {
+					System.out.println("Stop lollygagging and move on. ");
+					leaving = true;
+					}
+			}
 			// room24 
 			//no puzzle or monsters
 			if (room == 24) {
@@ -711,7 +972,65 @@ public class Player {
 				r.closeRoom24();
 				userInput = input.nextLine();
 			}
+			if (room == 24 && leaving == true) {
+				System.out.println("You are in room 24");
+				System.out.println("This room has access to rooms 21, 26 and 27");
+				
+				userInput = input.nextLine();
+				if (userInput.contains("north")) {
+					leaving = false;
+					room = 24;
+				}
+			 if (userInput.contains("21")) {
+					room = 21;
+					leaving = false;
 
+				}
+				if (userInput.contains("26")) {
+					room = 26;
+					leaving = false;
+
+				}
+				if (userInput.contains("27")) {
+					room = 27;
+					leaving = false;
+
+				}
+				/*if (userInput.contains("hallway1")) {					
+				System.out.println("entering hallway1");				
+				}*/
+			}
+			
+			if (room == 24 && leaving == false) {  
+				System.out.println("You are in room 24");
+				System.out.println("This room has access to rooms 21, 26 and 27");
+				System.out.println("Would you like to search the room? \n Yes or No ");
+				userInput = input.nextLine();
+				if (userInput.contains("yes")) {
+					r.openRoom24();
+					r.readRoom24();
+					r.closeRoom24();
+					System.out.println("");
+					System.out.println("Would you like to search? \n Yes or No");		
+					userInput = input.nextLine();
+					if (userInput.equalsIgnoreCase("no")) {
+						System.out.println("Be careful you never know whats lurking");
+						leaving = true;
+					}
+					
+						if (userInput.contains("yes")) {
+							System.out.print("Nothing to see here. Proceed?");
+							userInput = input.nextLine();
+							if (userInput.contains("yes")) {
+							leaving = true;
+							}
+						}
+
+				} else if (userInput.equalsIgnoreCase("no")) {
+					System.out.println("Stop lollygagging and move on. ");
+					leaving = true;
+					}
+			}
 			// room25
 			//
 			if (room == 25) {
@@ -719,6 +1038,65 @@ public class Player {
 				r.readRoom25();
 				r.closeRoom25();
 				userInput = input.nextLine();
+			}
+			if (room == 25 && leaving == true) {
+				System.out.println("You are in room 25");
+				System.out.println("This room has access to rooms 23, 26 and 27");
+				
+				userInput = input.nextLine();
+				if (userInput.contains("north")) {
+					leaving = false;
+					room = 23;
+				}
+			 if (userInput.contains("25")) {
+					room = 25;
+					leaving = false;
+
+				}
+				if (userInput.contains("26")) {
+					room = 26;
+					leaving = false;
+
+				}
+				if (userInput.contains("27")) {
+					room = 27;
+					leaving = false;
+
+				}
+				/*if (userInput.contains("hallway1")) {					
+				System.out.println("entering hallway1");				
+				}*/
+			}
+			
+			if (room == 25 && leaving == false) {  
+				System.out.println("You are in room 25");
+				System.out.println("This room has access to rooms 23, 26 and 27");
+				System.out.println("Would you like to search the room? \n Yes or No ");
+				userInput = input.nextLine();
+				if (userInput.contains("yes")) {
+					r.openRoom25();
+					r.readRoom25();
+					r.closeRoom25();
+					System.out.println("");
+					System.out.println("Would you like to search? \n Yes or No");		
+					userInput = input.nextLine();
+					if (userInput.equalsIgnoreCase("no")) {
+						System.out.println("Be careful you never know whats lurking");
+						leaving = true;
+					}
+					
+						if (userInput.contains("yes")) {
+							System.out.print("Nothing to see here. Proceed?");
+							userInput = input.nextLine();
+							if (userInput.contains("yes")) {
+							leaving = true;
+							}
+						}
+
+				} else if (userInput.equalsIgnoreCase("no")) {
+					System.out.println("Stop lollygagging and move on. ");
+					leaving = true;
+					}
 			}
 
 			// room26
@@ -743,7 +1121,7 @@ public class Player {
 			}
 
 			// room28
-			// Items IA06“Gilded Sword” IA07 “Gilded Plate”IA08 “Gilded Helm”
+			
 
 			if (room == 28 && leaving == true) {
 				System.out.println("You are in room 28");
@@ -1282,4 +1660,5 @@ public class Player {
 
 		}
 	}
-}
+
+}}}
