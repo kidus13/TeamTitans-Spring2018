@@ -1,4 +1,9 @@
+=========================================
 Witch of the falls “LyvFx” - Monster 6
 This monster is the witch that reside in the waterfall cave guarded
  by CenOrcs. this monster is allergic to "asbestos" which can be found
 in a stone called "Actinolite"
+
+Press "B" to enter in battle!
+Press "F" to flee
+=========================================

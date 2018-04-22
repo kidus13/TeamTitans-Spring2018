@@ -1,12 +1,9 @@
+=========================================
 Guard's Barracks - Room 3:
-“A room filled with beds, it seems to be a barracks of 
-some kind.  Luckily, there’s only one guard in the room.”
-The guard is sleeping as well.
+A room filled with beds, it seems to be a barracks of 
+some kind.  Luckily, there’s only one guard in the room.
+The guard(monster) is sleeping as well.
 
-===============================
-The Monster that resides here is...
-
-A Guard:
-
-Perhaps I can sneak by
-Receives +50% damage if attacked while asleep
+Would you like to examine monster?
+Type "e" to examine.
+=========================================

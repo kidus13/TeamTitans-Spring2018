@@ -205,8 +205,8 @@ public class GUI extends JFrame implements java.util.Observer {
 				Scanner input;
 				try {
 					input = new Scanner(file);
-					player.setName(input.nextLine());
-					textField1.setText("Hello " + player.getName());
+					//c.setName(input.nextLine());
+					textField1.setText("Hello ");
 				} catch (FileNotFoundException e1) {
 					System.out.println("that shit dont exist nigga");
 				}

@@ -1,3 +1,7 @@
+=========================================
 Entrance Room - Room 9:
-“This room is very cloudy and it’s the first entrance
- room into the waterfalls level”
+This room is very cloudy and it’s the first entrance
+room into the waterfalls level
+ 
+Type "m" to chose another room
+=========================================

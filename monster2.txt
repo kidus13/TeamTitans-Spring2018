@@ -1,3 +1,8 @@
+=========================================
 Jailer - Monster 2
 A torture happy individual, he seems perfectly 
 content with trying to rip you apart with his bare hands.
+
+Press "B" to enter in battle!
+Press "F" to flee
+=========================================

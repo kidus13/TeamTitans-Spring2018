@@ -11,8 +11,7 @@ import java.util.Scanner;
  */
 public class RoomWriter {
 
-	
-	//commands
+	// commands
 	private Scanner commands;
 
 	public void openCommands() {
@@ -33,9 +32,9 @@ public class RoomWriter {
 	public void closeCommands() {
 		commands.close();
 	}
-	
-	//private Scanner room1;
- private Scanner Room1;
+
+	// private Scanner room1;
+	private Scanner Room1;
 
 	public void openRoom1() {
 		try {
@@ -784,15 +783,91 @@ public class RoomWriter {
 		Room35.close();
 	}
 
-	/*
-	 * private Scanner Room;
-	 * 
-	 * public void openRoom() { try { Room = new Scanner(new File("room.txt")); }
-	 * catch (Exception e) { System.out.println("file  not found"); } } public void
-	 * readRoom() { while (Room.hasNextLine()) { String _Room = Room.nextLine();
-	 * System.out.println(_Room); } } public void closeRoom() { Room.close();
-	 * 
-	 * 
-	 * }
-	 */
+	private Scanner map;
+
+	public void openMap() {
+		try {
+			map = new Scanner(new File("map.txt"));
+		} catch (Exception e) {
+			System.out.println("file map not found");
+		}
+	}
+
+	public void readMap() {
+		while (map.hasNextLine()) {
+			String _map = map.nextLine();
+			System.out.println(_map);
+		}
+	}
+
+	public void closeMap() {
+		map.close();
+	}
+
+	private Scanner winner;
+
+	public void openWinner() {
+		try {
+			winner = new Scanner(new File("winner.txt"));
+		} catch (Exception e) {
+			System.out.println("file 1 not found");
+		}
+	}
+
+	public void readWinner() {
+		while (winner.hasNextLine()) {
+			String _winner = winner.nextLine();
+			System.out.println(_winner);
+		}
+	}
+
+	public void closeWinner() {
+		winner.close();
+	}
+
+	private Scanner welcome;
+
+	public void openWelcome() {
+		try {
+			welcome = new Scanner(new File("welcome.txt"));
+		} catch (Exception e) {
+			System.out.println("file 1 not found");
+		}
+	}
+
+	public void readWelcome() {
+		while (welcome.hasNextLine()) {
+			String _welcome = welcome.nextLine();
+			System.out.println(_welcome);
+		}
+	}
+
+	public void closeWelcome() {
+		welcome.close();
+	}
+	// player save
+
+	public void readSaveRead() {
+
+		try {
+			BufferedReader saveRead = new BufferedReader(new FileReader("save.txt"));
+			String _saveRead = null;
+			while ((_saveRead = saveRead.readLine()) != null) {
+				String[] subStr = _saveRead.split(",");
+				Character c = new Character(subStr[0], Integer.valueOf(subStr[1]), Integer.valueOf(subStr[2]));
+				// Battle b= new Battle();
+				c.setName(subStr[0]);
+				c.setPlayerHP(Integer.valueOf(subStr[1]));
+				// b.setPlayerAttackPoints(Integer.valueOf(subStr[2]));
+				// System.out.println(c.getPlayerName());
+			}
+			saveRead.close();
+
+		} catch (NumberFormatException | IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
 }

@@ -1,3 +1,8 @@
+=========================================
 shopkeeper “ArGhai” - Monster 7
 “This monster is the shop owner and keeper.
 It decides what would be sold and what items could be traded”
+
+Press "B" to enter in battle!
+Press "F" to flee
+=========================================

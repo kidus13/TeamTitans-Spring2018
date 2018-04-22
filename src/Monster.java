@@ -9,9 +9,9 @@ public class Monster {
 	private static int monsterHP;
 	private static int monsterAP;
 	private Weapon weapon;
-	Weapon w = new Weapon("",  0, 0, 0, 0, 0, false, false, false, false);
+	Weapon w = new Weapon("", 0, 0, 0, 0, 0, false, false, false, false);
 	Character c = new Character("", 0, 0);
-	
+
 	private static Monster EM01 = null;
 	private static Monster EM02 = null;
 	private static Monster EM03 = null;
@@ -28,8 +28,6 @@ public class Monster {
 	private static Monster AM03 = null;
 	private static Monster AM04 = null;
 	private static Monster AM05 = null;
-	
-	
 
 	/*** Methods ***/
 
@@ -54,13 +52,13 @@ public class Monster {
 
 	public int decreaseMPH(int decreasePoints) /* not sure how to implement this yet */
 	{
-		
+
 		int weaponDamage = 0;
 		int attackPoints = 100;
 		int monsterHP = getMonsterHP();
 		int decreaseMHP = monsterHP - (weaponDamage + attackPoints);
 		return decreaseMHP;
-				
+
 	}
 
 	public Weapon getWeapon() {
@@ -68,10 +66,9 @@ public class Monster {
 	}
 
 	// enemy attacks player
-//	public void attack(Player _player) {
-//		int weaponDamage = weapon.getDamage();
-//		int attack = strength + weaponDamage;
-
+	// public void attack(Player _player) {
+	// int weaponDamage = weapon.getDamage();
+	// int attack = strength + weaponDamage;
 
 	public boolean isDefeated() {
 		if (monsterHP <= 0) {
@@ -101,7 +98,8 @@ public class Monster {
 	 */
 	@Override
 	public String toString() {
-		return "Monster [Name = " + getName() + ", Health Points =" + getMonsterHP() + ", Attack Points = " + getMonsterAP() + "]";
+		return "Monster [Name = " + getName() + ", Health Points =" + getMonsterHP() + ", Attack Points = "
+				+ getMonsterAP() + "]";
 	}
 
 	// Monster Methods
@@ -154,7 +152,7 @@ public class Monster {
 		}
 		return WM04;
 	}
-	
+
 	public static Monster getFM01() {
 		{
 			FM01 = new Monster("Fire Lord Alucard", 315, 100);
@@ -217,6 +215,5 @@ public class Monster {
 		}
 		return AM05;
 	}
-
 
 }

@@ -1,5 +1,9 @@
+=========================================
 Fire Cavern 6 - Room 23: 
-” This room has a very thick smell and air is very
-thin but this room is not as hot as all the others”
-“This room also has an engraved locked molten 
-door which reads equip what is hot to enter.”
+This room has a very thick smell and air is very
+thin but this room is not as hot as all the others
+This room also has an engraved locked molten 
+door which reads equip what is hot to enter.
+
+Type "m" to chose another room
+=========================================

@@ -1,2 +1,7 @@
+=========================================
 Lava Queen Fluffy - Monster 10
 “All that is said about her is --Your life is her breath”
+
+Press "B" to enter in battle!
+Press "F" to flee
+=========================================

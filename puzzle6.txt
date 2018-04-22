@@ -1,11 +1,3 @@
-SUNDAY
-MONDAY
-TUESDAY
-WEDNESDAY
-THURSDAY
-FRIDAY
-SATURDAY
-
-What day comes three days after the day which 
-comes two days after the day which comes immediately 
-after the day which comes two days after Monday?
+=========================================
+Where do fish keep there money?
+=========================================

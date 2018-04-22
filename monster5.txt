@@ -1,4 +1,9 @@
+=========================================
 Guard Monster “CenOrc l2” - Monster 5
 This monster is the guard of the cave where the waterfall exist. 
 This monster is known to feed of the players strength, every time
 a player attacks it and don’t kill it gets stronger
+
+Press "B" to enter in battle!
+Press "F" to flee
+=========================================

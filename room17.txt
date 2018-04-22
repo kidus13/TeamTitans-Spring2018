@@ -1,3 +1,7 @@
+=========================================
 Fire Hallway - Room 17:
-“This hallway extends to every  room and you 
-can use it to navigate from room to room quicker”
+This hallway is engulfed in flames. Solve the puzzle 
+to recieve water to put out the flames.
+
+Type "e" to examine the puzzle.
+=========================================

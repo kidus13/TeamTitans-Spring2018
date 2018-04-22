@@ -1,14 +1,12 @@
+=========================================
 Antarctic Room - Room 29:
-“This room is a decent size, very open with two  
+This room is a decent size, very open with two  
 lamps to light the room on the south wall, as well
 as two windows on the north wall. A pudgy, penguin-like
-guard stands in the center, with a curved shortsword. 
+guard stands in the center, with a curved short sword. 
 He seems angry, but due to his size, he cannot move very 
-fast. To the east is a door to a hallway.”
+fast. To the east is a door to a hallway.
 
-=======================
-The Monster that resides here is...
-
-Penguin Guard - Monster 12
-“As a flightless member of the air guard, he does not have the highest honor.
-However, his slow movement is made up for by packing a powerful punch.”
+Would you like to examine monster?
+Type "e" to examine.
+=========================================

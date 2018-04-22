@@ -1,12 +1,11 @@
+=========================================
 Craft Room Store - Room 13:
-“This room shop is very gloomy and it contains different
- artifacts, it has a very foul distinctive smell from all the
-  artifacts crammed in it. it also has a stench due to the rotten 
-dead animal hidden in the cramped artifacts ”
+This room shop is very gloomy and it contains different
+artifacts, it has a very foul distinctive smell from all the
+artifacts crammed in it. it also has a stench due to the rotten 
+dead animal hidden in the cramped artifacts. To obtain these items 
+you must fight the monster
 
-================================
-The Monster that resides here is...
-
-Shopkeeper “ArGhai” - Monster 7
-“This monster is the shop owner and keeper.
-It decides what would be sold and what items could be traded”
+Would you like to examine the monster?
+Type "e" to examine.
+=========================================

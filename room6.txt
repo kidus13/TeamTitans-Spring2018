@@ -1,6 +1,9 @@
+=========================================
 Cell - Room 6:
-Before the merchant leaves - “A small inhospitable cell.
+A small inhospitable cell.
 There is a merchant here that has been being harassed 
-by the Jailer for far too long.”
-After the merchant leaves - “A small inhospitable cell. 
-It is currently empty except for yourself.”
+by the Jailer for far too long. The merchant leaves finally leaves.
+Hurry and steal the items before he come back.
+
+Type "t" to take the items
+=========================================

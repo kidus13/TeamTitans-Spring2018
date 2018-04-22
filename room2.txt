@@ -1,12 +1,10 @@
-You have just entered the Guardian's Station - Room 2:
-“Only slightly larger than the previous room, there is a 
+=========================================
+Guardian's Station - Room 2:
+Only slightly larger than the previous room, there is a 
 sleeping guard sitting in a chair in the far corner.  You
 can try to sneak by, or start a fight.
-Attacking the sleeping guard gives the player a free hit.
-=========================================
-The Monster that resides here is...
+Attacking the sleeping guard(monster) gives the player a free hit.
 
-Guard - Monster 1:
-A regular Guard, he seems to be taking a nap.  
-Perhaps I can sneak by
-Receives +50% damage if attacked while asleep
+Would you like to examine monster?
+Type "e" to examine.
+=========================================

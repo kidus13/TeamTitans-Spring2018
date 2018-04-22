@@ -1,5 +1,7 @@
-﻿You have just entered... 
+=========================================
+You have just entered... 
 the Entrance - Room 1:
-“A small room with two doors.  A locked door that you just 
+�A small room with two doors.  A locked door that you just 
 came through to enter the tower, and another door, 
-hanging slightly ajar. You can hear snoring beyond it.”
+hanging slightly ajar. You can hear snoring beyond it.
+=========================================

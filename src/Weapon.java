@@ -1,7 +1,15 @@
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+import java.util.List;
 import java.util.Random;
 
-public class Weapon {
+public class Weapon implements Serializable {
 
 	/*** Public Constants ***/
 
@@ -213,6 +221,57 @@ public class Weapon {
 		return tradable;
 	}
 
+	public void savedInv() throws ClassNotFoundException {
+
+		try {
+			Weapon w = new Weapon(getName(), getAddDefense(), getAddHealth(), getMinDamage(), getMaxDamage(),
+					getTradeValue(), isEquipable(), isDroppable(), isUseable(), isTradable());
+			Battle b = new Battle();
+
+			FileOutputStream fos2 = new FileOutputStream("save2.txt");
+
+			ObjectOutputStream oos2 = new ObjectOutputStream(fos2);
+			for (int i = 0; i < b.getInv().size(); i++) {
+				oos2.writeObject(b.getInv().get(i));
+			}
+			oos2.close();
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void loadInv() throws ClassNotFoundException {
+		Weapon weapon;
+		try {
+
+			FileInputStream fis2 = new FileInputStream("save2.txt");
+
+			ObjectInputStream ois2 = new ObjectInputStream(fis2);
+			Battle b = new Battle();
+
+			// weapon = (Weapon) ois2.readObject();
+			// b.getInv().add(weapon);
+			// List<Weapon> ds = (List<Weapon>)ois2.readObject();
+			// b.getInv().addAll(ds);
+
+			b.getInv().add((Weapon) ois2.readObject());
+
+			for (int i = 0; i < b.getInv().size(); i++) {
+				System.out.println(b.getInv().get(i) + "\n");
+			}
+			ois2.close();
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+
 	// weapon damage (max-min... random number)
 	public int getDamage() {
 		Random randomNum = new Random();
@@ -226,10 +285,8 @@ public class Weapon {
 	 */
 	@Override
 	public String toString() {
-		return "Weapon [Type = " + getName() + ", Add Defense = " + getAddDefense() + ", Add Health = " + getAddHealth()
-				+ ", Trade Value = " + getTradeValue() + ", Equipable = " + isEquipable() + ", Droppable ="
-				+ isDroppable() + ", Useable = " + isUseable() + ", Tradable =" + isTradable() + ", Damage = "
-				+ getDamage() + "]";
+		return "Weapon [Type = " + getName() + ", Add Health = " + getAddHealth() + ", Equipable = " + isEquipable()
+				+ ", Useable = " + isUseable() + ", Damage = " + getDamage() + "]";
 	}
 
 	// Methods for Weapons
@@ -240,7 +297,7 @@ public class Weapon {
 		}
 		return EI01;
 	}
-	
+
 	public static Weapon getEI02() {
 		{
 			EI02 = new Weapon("Sword", SWORD_DEFENSE, SWORD_HEALTH, SWORD_MIN, SWORD_MAX, 1, true, true, false, true);

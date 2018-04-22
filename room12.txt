@@ -1,5 +1,10 @@
+=========================================
 Stalactice Room - Room 12:
-“This room is steamy hot and very hard to see, it is  a 
+This room is steamy hot and very hard to see, it is  a 
 hallway with Stalactite hanging from the roof, the more 
 movement the player makes, the more chances of the stalactite
- falling and killing them” 
+falling and killing them
+
+Would you like to examine the monster?
+Type "c" to creep through.
+=========================================

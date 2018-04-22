@@ -1,3 +1,7 @@
 Fire Cavern 8 - Room 25: 
-“This room seems to be very similar to the previous room 
-except there are lava pools everywhere watch your step.”
+This room seems to be very similar to the previous room 
+except there are lava pools everywhere watch your step.
+
+Are you done at the spa? Its time for some action!
+Type "m" to chose another room
+=========================================

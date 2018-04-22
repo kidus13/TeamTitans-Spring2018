@@ -1,2 +1,8 @@
+=========================================
 Guard Monster “CenOrc l1” - Monster 4
 This monster is the guard of the sarcophagus room. 
+Looks like you were to loud and you have been spotted.
+
+Press "B" to enter in battle!
+Press "F" to flee
+=========================================

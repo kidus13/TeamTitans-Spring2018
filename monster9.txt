@@ -1,3 +1,8 @@
+=========================================
 Ultimate HellFire Beast - Monster 9
 “The heat that comes off his body is enough to melt anything
 above ground so he must be kept within his own realm.”
+
+Press "B" to enter in battle!
+Press "F" to flee
+=========================================

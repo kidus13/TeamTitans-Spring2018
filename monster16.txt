@@ -1,0 +1,10 @@
+=========================================
+The Dark Lord - Monster 16
+“The time has come for you to
+demonstrate your mastery of the elements.
+This ancient entity will push the limits of 
+your strength, wit, and elemental mastery.”
+
+Press "B" to enter in battle!
+Press "F" to flee
+=========================================

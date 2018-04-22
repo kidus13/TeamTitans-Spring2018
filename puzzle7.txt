@@ -1,2 +1,4 @@
-Bess weighs 20 pounds less than her brother Brandon.
-Together they weigh 120 pounds. What does each weigh?
+=========================================
+If there are 4 apples and you take away 3, 
+how many do you have? 
+=========================================

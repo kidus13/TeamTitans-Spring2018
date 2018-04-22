@@ -1,4 +1,9 @@
+=========================================
 VerKsr Room - Room 10:
-“This room is a completely dark old empty room,
- which can only be entered by answering a puzzle correctly, 
-the door to the room opens up and the room light up” 
+This room is a completely dark old empty room.
+However, there are items on the floor. In order to retrieve
+these items you must solve the puzzle
+
+Would you like to examine the puzzle?
+Type "e" to examine.
+=========================================

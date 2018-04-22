@@ -1,0 +1,9 @@
+=========================================
+Bat Squire - Monster 13
+“ Trainees of the air gMammalianuard who specialize in operations
+in the dark or at night. They are strong at resisting wind currents. 
+They have a keen fascination with exotic potions.”
+
+Press "B" to enter in battle!
+Press "F" to flee
+=========================================

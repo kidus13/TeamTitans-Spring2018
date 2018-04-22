@@ -1,0 +1,9 @@
+=========================================
+Veteran Eagle - Monster 14
+“Armed and dangerous, 
+this retiree from combat now stands guard of the dungeon from intruders. 
+Hasn’t failed in combat yet, and definitely won’t go down without a fight.”
+
+Press "B" to enter in battle!
+Press "F" to flee
+=========================================

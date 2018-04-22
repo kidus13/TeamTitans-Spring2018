@@ -1,11 +1,7 @@
 White Owl Room - Room 35:
-“The room is big and dark, and a silhouette of 
-a figure with glowing red eyes stares into your soul.”
+The room is big and dark, and a silhouette of 
+a figure with glowing red eyes stares into your soul.
 
-=============================
-The Monster that resides here is...
-
-The Dark Lord Rests Here:
-“The time has come for you to demonstrate your mastery of
-the elements. This ancient entity will push the limits of 
-your strength, wit, and elemental mastery.”
+Would you like to examine the monster?
+Type "e" to examine.
+=========================================

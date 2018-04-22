@@ -1,3 +1,7 @@
 Mariana Room - Room 33:
-“A dark jail cell with a 
-giddy shopkeep who is thrilled to be free.”
+A dark jail cell with a 
+giddy shopkeep who is thrilled to be free.
+
+Would you like to shop?
+Type "sh" to shop.
+=========================================

@@ -1,14 +1,9 @@
+=========================================
 Raven Room - Room 34: 
-“A giant birdman in fancy garb looks at you with
- angst, ready to strike. The room is huge, and torches light
- it across the walls toward the ceiling.”
+A giant birdman in fancy garb looks at you with
+angst, ready to strike. The room is huge, and torches light
+it across the walls toward the ceiling.
  
- ===========================
-The Monster that resides here is...
-
-King Flightgrand IV is in this room: 
-“His leadership, charisma, helped him win the respect of his
-people until his friendliness put his kingdom in jeopardy 
-when he was taken advantage of by neighboring societies. 
-Rumor has it that you were to blame, therefore you are his 
-worst enemy.”
+Would you like to examine the monster?
+Type "e" to examine.
+=========================================

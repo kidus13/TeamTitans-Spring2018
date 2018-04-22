@@ -1,13 +1,11 @@
+=========================================
 Fire Cavern 2:
-” This room is completely dark and there are pools of wet 
+This room is completely dark and there are pools of wet 
 steamy black fluid everywhere and you see a glow in the 
-background and hear a loud growl. “ “The ground begin rumbling
- and that same light begins coming towards you at 
-incredible speed as the ground shakes harder and harder.
+background and hear a loud growl.  The ground begins to rumble
+and that same light begins coming towards you at an
+incredible speed as the ground shakes harder and harder!!!
 
-====================================
-The Monster that resides here is...
-
-the Ultimate HellFire Beast - Monster 9
-“The heat that comes off his body is enough to melt anything
-above ground so he must be kept within his own realm.”
+Would you like to examine the monster?
+Type "e" to examine.
+=========================================

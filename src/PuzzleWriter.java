@@ -7,8 +7,7 @@ import java.util.Scanner;
  */
 public class PuzzleWriter {
 
-	
-	//commands
+	// commands
 	private Scanner commands;
 
 	public void openCommands() {
@@ -29,9 +28,9 @@ public class PuzzleWriter {
 	public void closeCommands() {
 		commands.close();
 	}
-	
-	//puzzle1;
- private Scanner puzzle1;
+
+	// puzzle1;
+	private Scanner puzzle1;
 
 	public void openPuzzle1() {
 		try {
@@ -51,9 +50,9 @@ public class PuzzleWriter {
 	public void closePuzzle1() {
 		puzzle1.close();
 	}
-	
-	//puzzle2;
- private Scanner puzzle2;
+
+	// puzzle2;
+	private Scanner puzzle2;
 
 	public void openPuzzle2() {
 		try {
@@ -73,9 +72,9 @@ public class PuzzleWriter {
 	public void closePuzzle2() {
 		puzzle2.close();
 	}
-	
-	//puzzle3;
- private Scanner puzzle3;
+
+	// puzzle3;
+	private Scanner puzzle3;
 
 	public void openPuzzle3() {
 		try {
@@ -95,9 +94,9 @@ public class PuzzleWriter {
 	public void closePuzzle3() {
 		puzzle3.close();
 	}
-	
-	//puzzle4;
- private Scanner puzzle4;
+
+	// puzzle4;
+	private Scanner puzzle4;
 
 	public void openPuzzle4() {
 		try {
@@ -117,9 +116,9 @@ public class PuzzleWriter {
 	public void closePuzzle4() {
 		puzzle4.close();
 	}
-	
-	//puzzle5;
- private Scanner puzzle5;
+
+	// puzzle5;
+	private Scanner puzzle5;
 
 	public void openPuzzle5() {
 		try {
@@ -139,9 +138,9 @@ public class PuzzleWriter {
 	public void closePuzzle5() {
 		puzzle5.close();
 	}
-	
-	//puzzle6;
- private Scanner puzzle6;
+
+	// puzzle6;
+	private Scanner puzzle6;
 
 	public void openPuzzle6() {
 		try {
@@ -161,9 +160,9 @@ public class PuzzleWriter {
 	public void closePuzzle6() {
 		puzzle6.close();
 	}
-	
-	//puzzle7;
- private Scanner puzzle7;
+
+	// puzzle7;
+	private Scanner puzzle7;
 
 	public void openPuzzle7() {
 		try {
@@ -183,8 +182,4 @@ public class PuzzleWriter {
 	public void closePuzzle7() {
 		puzzle7.close();
 	}
-	
-	
-	
-	
 }
