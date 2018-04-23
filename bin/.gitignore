@@ -15,9 +15,6 @@
 /Monster.class
 /MonsterWriter.class
 /Player.class
-/View$CloseListener.class
-/View.class
-/monster1.txt
 /PlayerController.class
 /PuzzleWriter.class
 /Puzzles.class
@@ -26,4 +23,7 @@
 /RoomWriter.class
 /Rooms.class
 /Test.class
+/View$CloseListener.class
+/View.class
 /Weapon.class
+/Puzzle.class
