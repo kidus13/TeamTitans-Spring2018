@@ -922,3 +922,465 @@ public class Room {
 				}
 			}
 		}
+	
+	public void Room25() {
+
+		Scanner input = new Scanner(System.in);
+		System.out.println("=========================================");
+		System.out.println("You are at room 25. Type 's' to search ");
+		System.out.println("Press 'ex' to exit at anytime ");
+		System.out.println("=========================================");
+		String userInput = input.nextLine();
+		while (inRoom == true) {
+
+			if (userInput.equalsIgnoreCase("ex")) {
+				p.navigation();
+				break;
+			}
+
+			if (userInput.equalsIgnoreCase("s")) {
+				r.openRoom25();
+				r.readRoom25();
+				r.closeRoom25();
+				userInput = input.nextLine();
+			}
+			if (userInput.equalsIgnoreCase("m")) {
+				p.navigation();
+				break;
+			}
+		}
+	}
+
+	public void Room26() {
+
+		while (inRoom == true) {
+			Scanner input = new Scanner(System.in);
+			System.out.println("=========================================");
+			System.out.println("You are at room 26. Type 's' to search ");
+			System.out.println("Press 'ex' to exit at anytime ");
+			System.out.println("=========================================");
+			String userInput = input.nextLine();
+			while (inRoom == true) {
+
+				if (userInput.equalsIgnoreCase("ex")) {
+					p.navigation();
+					break;
+				}
+
+				if (userInput.equalsIgnoreCase("s")) {
+					r.openRoom26();
+					r.readRoom26();
+					r.closeRoom26();
+					userInput = input.nextLine();
+				}
+
+				if (userInput.equalsIgnoreCase("e")) {
+					mr.openMonster11();
+					mr.readMonster11();
+					mr.closeMonster11();
+					userInput = input.nextLine();
+
+				}
+
+				if (userInput.equalsIgnoreCase("f")) {
+					b.runFM04();
+					p.navigation();
+					break;
+				}
+
+				if (userInput.equalsIgnoreCase("b")) {
+					b.weaponAttackFM04();
+					p.navigation();
+					break;
+				}
+
+				if (userInput.equalsIgnoreCase("e")) {
+					puz.puzzleSol4();
+					userInput = input.nextLine();
+					p.navigation();
+					break;
+				}
+			}
+		}
+	}
+
+	public void Room27() {
+
+		while (inRoom == true) {
+			Scanner input = new Scanner(System.in);
+			System.out.println("=========================================");
+			System.out.println("You are at room 26. Type 's' to search ");
+			System.out.println("Press 'ex' to exit at anytime ");
+			System.out.println("=========================================");
+			String userInput = input.nextLine();
+			while (inRoom == true) {
+
+				if (userInput.equalsIgnoreCase("ex")) {
+					p.navigation();
+					break;
+				}
+
+				if (userInput.equalsIgnoreCase("s")) {
+					r.openRoom27();
+					r.readRoom27();
+					r.closeRoom27();
+					userInput = input.nextLine();
+				}
+
+				if (userInput.equalsIgnoreCase("e")) {
+					mr.openMonster10();
+					mr.readMonster10();
+					mr.closeMonster10();
+					userInput = input.nextLine();
+
+				}
+
+				if (userInput.equalsIgnoreCase("f")) {
+					b.runFM03();
+					p.navigation();
+					break;
+				}
+
+				if (userInput.equalsIgnoreCase("b")) {
+					b.weaponAttackFM03();
+					p.navigation();
+					break;
+				}
+
+				if (userInput.equalsIgnoreCase("e")) {
+					puz.puzzleSol5();
+					userInput = input.nextLine();
+					p.navigation();
+					break;
+				}
+			}
+		}
+	}
+
+	public void Room28() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("=========================================");
+		System.out.println("You are at room 28. Type 's' to search ");
+		System.out.println("Press 'ex' to exit at anytime ");
+		System.out.println("=========================================");
+		String userInput = input.nextLine();
+		while (inRoom == true) {
+
+			if (userInput.equalsIgnoreCase("ex")) {
+				p.navigation();
+				break;
+			}
+
+			if (userInput.equalsIgnoreCase("s")) {
+				r.openRoom28();
+				r.readRoom28();
+				r.closeRoom28();
+				userInput = input.nextLine();
+			}
+			if (userInput.equalsIgnoreCase("e")) {
+				System.out.println("=========================================");
+				System.out.println(w.getAI07());
+				System.out.println(w.getAI08());
+				System.out.println();
+				System.out.println("Would you like to add these items to your inventory?");
+				System.out.println("=========================================");
+				userInput = input.nextLine();
+			}
+			if (userInput.equalsIgnoreCase("yes")) {
+				b.inv.add(w.getAI06());
+				b.inv.add(w.getAI07());
+				b.inv.add(w.getAI08());
+
+				System.out.println("=========================================");
+				for (int i = 0; i < b.inv.size(); i++) {
+					System.out.println(b.inv.get(i) + "\n");
+				}
+				System.out.println("=========================================");
+				p.navigation();
+				break;
+			}
+		}
+	}
+
+	public void Room29() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("=========================================");
+		System.out.println("You are at room 29. Type 's' to search ");
+		System.out.println("Press 'ex' to exit at anytime ");
+		System.out.println("=========================================");
+		String userInput = input.nextLine();
+		while (inRoom == true) {
+
+			if (userInput.equalsIgnoreCase("ex")) {
+				p.navigation();
+				break;
+			}
+
+			if (userInput.equalsIgnoreCase("s")) {
+				r.openRoom29();
+				r.readRoom29();
+				r.closeRoom29();
+				userInput = input.nextLine();
+			}
+			if (userInput.equalsIgnoreCase("e")) {
+				mr.openMonster12();
+				mr.readMonster12();
+				mr.closeMonster12();
+				userInput = input.nextLine();
+
+			}
+			if (userInput.equalsIgnoreCase("f")) {
+				b.runAM01();
+				p.navigation();
+				break;
+			}
+			if (userInput.equalsIgnoreCase("b")) {
+				b.weaponAttackAM01();
+				p.navigation();
+				break;
+			}
+		}
+	}
+
+	public void Room30() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("=========================================");
+		System.out.println("You are at room 30. Type 's' to search ");
+		System.out.println("Press 'ex' to exit at anytime ");
+		System.out.println("=========================================");
+		String userInput = input.nextLine();
+		while (inRoom == true) {
+
+			if (userInput.equalsIgnoreCase("ex")) {
+				p.navigation();
+				break;
+			}
+
+			if (userInput.equalsIgnoreCase("s")) {
+				r.openRoom30();
+				r.readRoom30();
+				r.closeRoom30();
+				userInput = input.nextLine();
+				if (userInput.equalsIgnoreCase("e")) {
+					mr.openMonster13();
+					mr.readMonster13();
+					mr.closeMonster13();
+					userInput = input.nextLine();
+
+				}
+				if (userInput.equalsIgnoreCase("f")) {
+					b.runAM02();
+					p.navigation();
+					break;
+				}
+				if (userInput.equalsIgnoreCase("b")) {
+					b.weaponAttackAM02();
+					p.navigation();
+					break;
+				}
+			}
+		}
+	}
+
+	public void Room31() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("=========================================");
+		System.out.println("You are at room 31. Type 's' to search ");
+		System.out.println("Press 'ex' to exit at anytime ");
+		System.out.println("=========================================");
+		String userInput = input.nextLine();
+		while (inRoom == true) {
+
+			if (userInput.equalsIgnoreCase("ex")) {
+				p.navigation();
+				break;
+			}
+
+			if (userInput.equalsIgnoreCase("s")) {
+				r.openRoom31();
+				r.readRoom31();
+				r.closeRoom31();
+				userInput = input.nextLine();
+			}
+			if (userInput.equalsIgnoreCase("e")) {
+				puz.puzzleSol6();
+				userInput = input.nextLine();
+				p.navigation();
+				break;
+			}
+		}
+	}
+
+	public void Room32() {
+
+		while (inRoom == true) {
+
+			Scanner input = new Scanner(System.in);
+			// if(b.inv.contains(w.getAI01().getName().equalsIgnoreCase("Breeze Key")) ){
+			if (b.inv.contains(w.getName().equalsIgnoreCase("Breeze Key"))) {
+
+				System.out.println("=========================================");
+				System.out.println("You are at room 32. Type 's' to search ");
+				System.out.println("Press 'ex' to exit at anytime ");
+				System.out.println("=========================================");
+				String userInput = input.nextLine();
+				while (inRoom == true) {
+
+					if (userInput.equalsIgnoreCase("ex")) {
+						p.navigation();
+						break;
+					}
+
+					if (userInput.equalsIgnoreCase("s")) {
+						r.openRoom32();
+						r.readRoom32();
+						r.closeRoom32();
+						userInput = input.nextLine();
+						if (userInput.equalsIgnoreCase("e")) {
+							mr.openMonster14();
+							mr.readMonster14();
+							mr.closeMonster14();
+							userInput = input.nextLine();
+
+						}
+						if (userInput.equalsIgnoreCase("f")) {
+							b.runAM03();
+							p.navigation();
+							break;
+						}
+						if (userInput.equalsIgnoreCase("b")) {
+							b.weaponAttackAM03();
+							p.navigation();
+							break;
+						}
+					}
+				}
+			} else {
+				System.out.println("Sorry,but you need a key to enter.");
+				p.navigation();
+				break;
+			}
+		}
+	}
+
+	public void Room33() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("=========================================");
+		System.out.println("You are at room 33. Type 's' to search ");
+		System.out.println("Press 'ex' to exit at anytime ");
+		System.out.println("=========================================");
+		String userInput = input.nextLine();
+		while (inRoom == true) {
+
+			if (userInput.equalsIgnoreCase("ex")) {
+				p.navigation();
+				break;
+			}
+
+			if (userInput.equalsIgnoreCase("s")) {
+				r.openRoom33();
+				r.readRoom33();
+				r.closeRoom33();
+				userInput = input.nextLine();
+			}
+			if (userInput.equalsIgnoreCase("sh")) {
+
+				System.out.println("=========================================");
+				System.out.println(w.getAI04());
+				System.out.println("Would you like to add these items to your inventory?");
+				System.out.println("=========================================");
+				userInput = input.nextLine();
+			}
+			if (userInput.equalsIgnoreCase("yes")) {
+				b.inv.add(w.getAI04());
+				System.out.println("=========================================");
+				for (int i = 0; i < b.inv.size(); i++) {
+					System.out.println(b.inv.get(i) + "\n");
+				}
+				System.out.println("=========================================");
+				p.navigation();
+				break;
+			}
+		}
+	}
+
+	public void Room34() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("=========================================");
+		System.out.println("You are at room 34. Type 's' to search ");
+		System.out.println("Press 'ex' to exit at anytime ");
+		System.out.println("=========================================");
+		String userInput = input.nextLine();
+		while (inRoom == true) {
+
+			if (userInput.equalsIgnoreCase("ex")) {
+				p.navigation();
+				break;
+			}
+
+			if (userInput.equalsIgnoreCase("s")) {
+				r.openRoom34();
+				r.readRoom34();
+				r.closeRoom34();
+				userInput = input.nextLine();
+			}
+			if (userInput.equalsIgnoreCase("e")) {
+				mr.openMonster15();
+				mr.readMonster15();
+				mr.closeMonster15();
+				userInput = input.nextLine();
+
+			}
+			if (userInput.equalsIgnoreCase("f")) {
+				b.runAM04();
+				p.navigation();
+				break;
+			}
+			if (userInput.equalsIgnoreCase("b")) {
+				b.weaponAttackAM04();
+				p.navigation();
+				break;
+			}
+		}
+	}
+
+	public void Room35() {
+		Scanner input = new Scanner(System.in);
+		System.out.println("=========================================");
+		System.out.println("You are at room 35. Type 's' to search ");
+		System.out.println("Press 'ex' to exit at anytime ");
+		System.out.println("=========================================");
+		String userInput = input.nextLine();
+		while (inRoom == true) {
+
+			if (userInput.equalsIgnoreCase("ex")) {
+				p.navigation();
+				break;
+			}
+
+			if (userInput.equalsIgnoreCase("s")) {
+				r.openRoom35();
+				r.readRoom35();
+				r.closeRoom35();
+				userInput = input.nextLine();
+			}
+			if (userInput.equalsIgnoreCase("e")) {
+				mr.openMonster16();
+				mr.readMonster16();
+				mr.closeMonster16();
+				userInput = input.nextLine();
+
+			}
+			if (userInput.equalsIgnoreCase("f")) {
+				b.runAM05();
+				p.navigation();
+				break;
+			}
+			if (userInput.equalsIgnoreCase("b")) {
+				b.attackEM01();
+				break;
+
+			}
+		}
+	}
+}
