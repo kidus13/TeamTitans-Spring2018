@@ -153,7 +153,7 @@ public class PlayerController {
 				}
 			}
 			if (userInput.equalsIgnoreCase("5")) {
-				if (b.getInv().contains("Torture Key")) {
+				if (b.getInv().size()>5) {
 					r.Room5();
 
 				} else {
@@ -276,7 +276,7 @@ public class PlayerController {
 			// AIR LEVEL
 
 			for (int i = 28; i < 36; i++)
-				if (b.getInv().size() < 17 && userInput.equalsIgnoreCase(String.valueOf(i))) {
+				if (b.getInv().size() < 1 && userInput.equalsIgnoreCase(String.valueOf(i))) {
 					System.out.println("You have not collected enough items to move on");
 					userInput = input.nextLine();
 					continue;

@@ -25,7 +25,7 @@ public class Puzzle  {
 		}
 
 		if (answer.equalsIgnoreCase("h")) {
-			System.out.println("Hint: Remember conversions?");
+			System.out.println("Hint: Remeber conversions?");
 			 answer = input.next();
 		
 			if (answer.equalsIgnoreCase("same")) {
@@ -179,7 +179,7 @@ public class Puzzle  {
 		}
 
 		if (answer.equalsIgnoreCase("h")) {
-			System.out.println("Hint: It's the same place they swim");
+			System.out.println("Hint: Its the same place they swim");
 			 answer = input.next();
 		
 			if (answer.equalsIgnoreCase("river bank")) {
@@ -210,7 +210,7 @@ public class Puzzle  {
 		}
 
 		if (answer.equalsIgnoreCase("h")) {
-			System.out.println("Hint: It's not that hard dude. Learn to count");
+			System.out.println("Hint: Its not that hard dude. Learn to count");
 			 answer = input.next();
 		
 			if (answer.equalsIgnoreCase("3")) {
